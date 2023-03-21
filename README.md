@@ -3,6 +3,7 @@
 ## Team members: 
 Zac Pinard
 Kuang-Cheng Cheng
+Jianjin Chen
 ## Final Proposal
 Outline:
 1. persona/Scenario
