@@ -1,5 +1,6 @@
 # Geog575 Final Project
 # Team Name:
+Wastewater
 ## Team members: 
 Zac Pinard
 Kuang-Cheng Cheng
