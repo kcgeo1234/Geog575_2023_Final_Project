@@ -34,7 +34,7 @@ b. Automatic Pan and Zoom
 
 
 
-
+![blank wireframe](img/blank_wireframe.png)
 
 
 Sources:
