@@ -17,7 +17,7 @@ Scenario#1:
 Paul is a resident of Dane County, WI who's house is within the sewer service area regulated by the Madison Metropolitan Sewerage District.  He would like to know where his wastewater goes, in order to get a clearer picture of how his water use fits into the broader hydrological cycle in Dane County.  Paul knows that wastewater contains a lot of chemicals and bacteria with the potential to contaminate natural areas and drinking water supply if not properly treated.  He wants to see if his wastewater is affecting local wildlife areas, wetlands, recreation areas, or water sources.
 
 Scenario#2:
-Boris Builannikov is an undergraduate student from UW-Madison, majoring in Environmental Science. He is intended to reveal a typical wastewater treatment process as preparation for his career in this industry. City of Madison is the ideal choice since it is where he lives right now.
+Boris Builannikov is an undergraduate student from UW-Madison, majoring in Environmental Science. He is intended to reveal a typical wastewater treatment process as preparation for his career in this industry. City of Madison is the ideal choice since it is where he lives right now. He wants to provide an interactive map for the residents to search for their addresses to understand how far their household wastewater requires to travel for being treated and where the wastewater go back to the natural environment.
 
 2. Requirements Document
 (1) Representation
