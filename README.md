@@ -14,7 +14,7 @@ Name & Position: Professor Bunyan is a professor of International Economics who 
 
 Background Description: 
 Scenario#1:
-Upon arriving at the interface, the map shows a default selection for metal exports from the United States in 2021 with proportional symbols around each country that recieved U.S. metal imports in that year.  The professor hovers over each symbol to reveal a popup that shows a sparkline graph of metal exports from the U.S. to that country over time.  The professor then searches for Mexico using the search bar at the top and the map opens the popup window associated with the proportional symbol for Mexico. The professor then selects 2001 using a slider widget at the top and the proportional symbols update, and he points out to the class how Mexico's symbol shrinks.  Finally, he goes to the accordion side panel on the left, selects the "Machinery" dropdown menu, and then selects "Electrical Machinery and Electrics".  The proportional symbols update to display the data for U.S. exports of electrical machinery in 2001.  Finally, he changes the toggle at the top from exports to imports and the map reexpresses the proportional symbols to reflect the import data for electric machinery in 2001.
+Upon arriving at the interface, the map shows a default **selection** for metal exports from the United States in 2021 with proportional symbols around each country that recieved U.S. metal imports in that year.  The professor **hovers** over each symbol to reveal a popup that **reexpresses** the metal export data in that country using a sparkline graph of metal exports from the U.S. to that country over time.  The professor then **searches** for Mexico using the search bar at the top and the map opens the popup window associated with the proportional symbol for Mexico. The professor then **selects** 2001 using the slider widget at the top and the proportional symbols update, and he **compares** the two years by pointing out how Mexico's symbol shrinks.  Finally, he goes to the accordion side panel on the left, **selects** the "Machinery" dropdown menu, and then **selects** "Electrical Machinery and Electrics" from the menu.  The proportional symbols update to display the data for U.S. exports of electrical machinery in 2001.  Finally, he changes the toggle at the top from exports to imports and the map **filters out** the export map and **overlays** the import map, so the proportional symbols reflect the import data for electric machinery in 2001.
 
 2. Requirements Document
 (1) Representation
@@ -36,7 +36,21 @@ d. Import/Export toggle
 
 
 Sources:
-- https://madsewer.maps.arcgis.com/apps/webappviewer/index.html?id=88b097d42ba24851b3d102660d904c18
-- https://data-cityofmadison.opendata.arcgis.com/datasets/cityofmadison::sanitary-sewer-mains/explore?location=43.071685%2C-89.405217%2C15.62
-- https://dnr.wisconsin.gov/topic/SurfaceWater/SSAPlanning.html
-- https://www.madsewer.org/who-we-are/service-area/
+Overall:
+https://oec.world/en/profile/hs/coffee-not-roasted-not-decaffeinated?latestTrendsYAxisSelector=linear#market-dynamics
+Industries:
+Fish:
+non-fillet frozen fish https://oec.world/en/profile/bilateral-product/non-fillet-frozen-fish/reporter/usa
+non-fillet fresh fish https://oec.world/en/profile/bilateral-product/non-fillet-fresh-fish/reporter/usa
+fish fillets https://oec.world/en/profile/bilateral-product/fish-fillets/reporter/usa
+Machine:
+Machinery, mechanical appliances, & parts in United States https://oec.world/en/profile/bilateral-product/machinery-mechanical-appliances-parts/reporter/usa
+Electrical machinery and electrics. https://oec.world/en/profile/bilateral-product/electrical-machinery-and-electronics/reporter/usa
+Machines https://oec.world/en/profile/bilateral-product/machines/reporter/usa
+Chemical:
+organic chemicals https://oec.world/en/profile/bilateral-product/organic-chemicals/reporter/usa
+Chemical https://oec.world/en/profile/bilateral-product/chemical-products/reporter/usa
+halogenated hydrocarbons https://oec.world/en/profile/bilateral-product/halogenated-hydrocarbons/reporter/usa
+Other Materials:
+Metal https://oec.world/en/profile/bilateral-product/metals/reporter/usa
+Textiles https://oec.world/en/profile/bilateral-product/textiles/reporter/usa
