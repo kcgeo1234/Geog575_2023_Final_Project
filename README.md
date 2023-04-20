@@ -1,5 +1,5 @@
 # Geog575 Final Project
-# Team Name: Wastewater
+# Team Name: U.S. International Trading
 ## Team members: 
 Zac Pinard,
 Kuang-Cheng Cheng,
@@ -10,7 +10,7 @@ Outline:
  Shared_Repo for the Geog575 final project
 
 Target User Profile (Persona):
-Name & Position: Paul Bunyan, Dane County resident
+Name & Position: Professor Bunyan is a professor of International Economics who needs to lecture his class on the U.S.'s role in international trade.  He would like to support this lecture by showing a quick snapshot of the scale of the U.S.'s exports and imports in various industries, as well as which countries the U.S. has strong trade relations with.  In this lecture, he would like to **compare** the exports of textiles to Mexico in 2021 and 2016.  He would also like to show any **trends**, **patterns**, and **clusters** of countries that the U.S. exports chemical products to.  Finally, he would like to **rank** the U.S.'s trade partners by percentage of U.S. metals they import.
 
 Background Description: 
 Scenario#1:
