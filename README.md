@@ -39,9 +39,9 @@ d. Import/Export toggle
 <p> Overall:
  - https://oec.world/en/profile/hs/coffee-not-roasted-not-decaffeinated?latestTrendsYAxisSelector=linear#market-dynamics </p><br>
 <p>Industries: </p>
- <p>- Fish:
-  - non-fillet frozen fish https://oec.world/en/profile/bilateral-product/non-fillet-frozen-fish/reporter/usa
-  - non-fillet fresh fish https://oec.world/en/profile/bilateral-product/non-fillet-fresh-fish/reporter/usa
+ <p>- Fish: </p>
+  - <p> non-fillet frozen fish https://oec.world/en/profile/bilateral-product/non-fillet-frozen-fish/reporter/usa <br>
+  - non-fillet fresh fish https://oec.world/en/profile/bilateral-product/non-fillet-fresh-fish/reporter/usa <br>
   - fish fillets https://oec.world/en/profile/bilateral-product/fish-fillets/reporter/usa </p>
  - Machine:
   - Machinery, mechanical appliances, & parts in United States https://oec.world/en/profile/bilateral-product/machinery-mechanical-appliances-parts/reporter/usa
