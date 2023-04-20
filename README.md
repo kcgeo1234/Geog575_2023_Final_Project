@@ -1,5 +1,5 @@
 # Geog575 Final Project
-# Team Name: U.S. International Trading
+# Team Name: U.S. International Trade
 ## Team members: 
 Zac Pinard,
 Kuang-Cheng Cheng,
@@ -14,23 +14,24 @@ Name & Position: Professor Bunyan is a professor of International Economics who 
 
 Background Description: 
 Scenario#1:
-Paul is a resident of Dane County, WI who's house is within the sewer service area regulated by the Madison Metropolitan Sewerage District.  He would like to know where his wastewater goes, in order to get a clearer picture of how his water use fits into the broader hydrological cycle in Dane County.  Paul knows that wastewater contains a lot of chemicals and bacteria with the potential to contaminate natural areas and drinking water supply if not properly treated.  He wants to see if his wastewater is affecting local wildlife areas, wetlands, recreation areas, or water sources.
+Upon arriving at the interface, the map shows a default selection for metal exports from the United States in 2021 with proportional symbols around each country that recieved U.S. metal imports in that year.  The professor hovers over each symbol to reveal a popup that shows a sparkline graph of metal exports from the U.S. to that country over time.  The professor then searches for Mexico using the search bar at the top and the map opens the popup window associated with the proportional symbol for Mexico. The professor then selects 2001 using a slider widget at the top and the proportional symbols update, and he points out to the class how Mexico's symbol shrinks.  Finally, he goes to the accordion side panel on the left, selects the "Machinery" dropdown menu, and then selects "Electrical Machinery and Electrics".  The proportional symbols update to display the data for U.S. exports of electrical machinery in 2001.  Finally, he changes the toggle at the top from exports to imports to 
 
 Scenario#2:
 Boris Builannikov is an undergraduate student from UW-Madison, majoring in Environmental Science. He is intended to reveal a typical wastewater treatment process as preparation for his career in this industry. City of Madison is the ideal choice since it is where he lives right now. He wants to provide an interactive map for the residents to search for their addresses to understand how far their household wastewater requires to travel for being treated and where the wastewater go back to the natural environment.
 
 2. Requirements Document
 (1) Representation
-a. Basemap of Madison city
-b. Sewer system
-c. Hubs(treatment facility and creeks)
+a. Basemap of the World
+b. Country Borders
+c. Proportional Symbols for abosolute value of exports/imports
 d. Legend
 e. Overview
-f. Side Panel
+f. Accordion Panel with Sparklines
 (2) Interaction
-a. Search bar
-    Let the users enter an address.
-b. Automatic Pan and Zoom
+a. Search bar to let the users enter a country.
+b. Individual country Pop-ups with sparkline of selected indsutry in selected country
+c. Year Slider
+d. Import/Export toggle
 
 
 
