@@ -34,7 +34,7 @@ b. Automatic Pan and Zoom
 
 
 
-![draft](img/draft_img.jpeg)
+![draft](img/draft_img.jpg)
 
 
 Sources:
