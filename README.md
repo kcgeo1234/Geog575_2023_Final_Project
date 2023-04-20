@@ -37,21 +37,21 @@ d. Import/Export toggle
 
 <p> Sources:
 Overall:
-https://oec.world/en/profile/hs/coffee-not-roasted-not-decaffeinated?latestTrendsYAxisSelector=linear#market-dynamics <br>
+- https://oec.world/en/profile/hs/coffee-not-roasted-not-decaffeinated?latestTrendsYAxisSelector=linear#market-dynamics <br>
 Industries:
-Fish:
-non-fillet frozen fish https://oec.world/en/profile/bilateral-product/non-fillet-frozen-fish/reporter/usa
-non-fillet fresh fish https://oec.world/en/profile/bilateral-product/non-fillet-fresh-fish/reporter/usa
-fish fillets https://oec.world/en/profile/bilateral-product/fish-fillets/reporter/usa
-Machine:
-Machinery, mechanical appliances, & parts in United States https://oec.world/en/profile/bilateral-product/machinery-mechanical-appliances-parts/reporter/usa
-Electrical machinery and electrics. https://oec.world/en/profile/bilateral-product/electrical-machinery-and-electronics/reporter/usa
-Machines https://oec.world/en/profile/bilateral-product/machines/reporter/usa
-Chemical:
-organic chemicals https://oec.world/en/profile/bilateral-product/organic-chemicals/reporter/usa
-Chemical https://oec.world/en/profile/bilateral-product/chemical-products/reporter/usa
-halogenated hydrocarbons https://oec.world/en/profile/bilateral-product/halogenated-hydrocarbons/reporter/usa
-Other Materials:
-Metal https://oec.world/en/profile/bilateral-product/metals/reporter/usa
-Textiles https://oec.world/en/profile/bilateral-product/textiles/reporter/usa
+- Fish:
+ - non-fillet frozen fish https://oec.world/en/profile/bilateral-product/non-fillet-frozen-fish/reporter/usa
+ - non-fillet fresh fish https://oec.world/en/profile/bilateral-product/non-fillet-fresh-fish/reporter/usa
+ - fish fillets https://oec.world/en/profile/bilateral-product/fish-fillets/reporter/usa
+- Machine:
+ - Machinery, mechanical appliances, & parts in United States https://oec.world/en/profile/bilateral-product/machinery-mechanical-appliances-parts/reporter/usa
+ - Electrical machinery and electrics. https://oec.world/en/profile/bilateral-product/electrical-machinery-and-electronics/reporter/usa
+ - Machines https://oec.world/en/profile/bilateral-product/machines/reporter/usa
+- Chemicals:
+ - organic chemicals https://oec.world/en/profile/bilateral-product/organic-chemicals/reporter/usa
+ - Chemical https://oec.world/en/profile/bilateral-product/chemical-products/reporter/usa
+ - halogenated hydrocarbons https://oec.world/en/profile/bilateral-product/halogenated-hydrocarbons/reporter/usa
+- Other Materials:
+ - Metal https://oec.world/en/profile/bilateral-product/metals/reporter/usa
+ - Textiles https://oec.world/en/profile/bilateral-product/textiles/reporter/usa
 </p>
