@@ -44,15 +44,15 @@ d. Import/Export toggle
   -non-fillet frozen fish https://oec.world/en/profile/bilateral-product/non-fillet-frozen-fish/reporter/usa <br>
   - non-fillet fresh fish https://oec.world/en/profile/bilateral-product/non-fillet-fresh-fish/reporter/usa <br>
   - fish fillets https://oec.world/en/profile/bilateral-product/fish-fillets/reporter/usa <br>
- - Machine:
-  - Machinery, mechanical appliances, & parts in United States https://oec.world/en/profile/bilateral-product/machinery-mechanical-appliances-parts/reporter/usa
-  - Electrical machinery and electrics. https://oec.world/en/profile/bilateral-product/electrical-machinery-and-electronics/reporter/usa
-  - Machines https://oec.world/en/profile/bilateral-product/machines/reporter/usa
- - Chemicals:
-  - organic chemicals https://oec.world/en/profile/bilateral-product/organic-chemicals/reporter/usa
-  - Chemical https://oec.world/en/profile/bilateral-product/chemical-products/reporter/usa
-  - halogenated hydrocarbons https://oec.world/en/profile/bilateral-product/halogenated-hydrocarbons/reporter/usa
- - Other Materials:
-  - Metal https://oec.world/en/profile/bilateral-product/metals/reporter/usa
-  - Textiles https://oec.world/en/profile/bilateral-product/textiles/reporter/usa
+ - Machine: <br>
+  - Machinery, mechanical appliances, & parts in United States https://oec.world/en/profile/bilateral-product/machinery-mechanical-appliances-parts/reporter/usa <br>
+  - Electrical machinery and electrics. https://oec.world/en/profile/bilateral-product/electrical-machinery-and-electronics/reporter/usa <br>
+  - Machines https://oec.world/en/profile/bilateral-product/machines/reporter/usa <br>
+ - Chemicals: <br>
+  - organic chemicals https://oec.world/en/profile/bilateral-product/organic-chemicals/reporter/usa <br>
+  - Chemical https://oec.world/en/profile/bilateral-product/chemical-products/reporter/usa <br>
+  - halogenated hydrocarbons https://oec.world/en/profile/bilateral-product/halogenated-hydrocarbons/reporter/usa <br>
+ - Other Materials: <br>
+  - Metal https://oec.world/en/profile/bilateral-product/metals/reporter/usa <br>
+  - Textiles https://oec.world/en/profile/bilateral-product/textiles/reporter/usa <br>
 </p>
