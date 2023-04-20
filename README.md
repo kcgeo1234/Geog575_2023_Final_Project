@@ -35,7 +35,7 @@ d. Import/Export toggle
 ![draft](img/draft_img.jpg)
 
 
-Sources:
+<p> Sources:
 Overall:
 https://oec.world/en/profile/hs/coffee-not-roasted-not-decaffeinated?latestTrendsYAxisSelector=linear#market-dynamics <br>
 Industries:
@@ -54,3 +54,4 @@ halogenated hydrocarbons https://oec.world/en/profile/bilateral-product/halogena
 Other Materials:
 Metal https://oec.world/en/profile/bilateral-product/metals/reporter/usa
 Textiles https://oec.world/en/profile/bilateral-product/textiles/reporter/usa
+</p>
