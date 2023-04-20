@@ -40,19 +40,19 @@ d. Import/Export toggle
  - https://oec.world/en/profile/hs/coffee-not-roasted-not-decaffeinated?latestTrendsYAxisSelector=linear#market-dynamics </p><br>
 <p>
  Industries:<br>
- - Fish: <br>
+ Fish: <br>
   -non-fillet frozen fish https://oec.world/en/profile/bilateral-product/non-fillet-frozen-fish/reporter/usa <br>
   - non-fillet fresh fish https://oec.world/en/profile/bilateral-product/non-fillet-fresh-fish/reporter/usa <br>
   - fish fillets https://oec.world/en/profile/bilateral-product/fish-fillets/reporter/usa <br>
- - Machine: <br>
+ Machine: <br>
   - Machinery, mechanical appliances, & parts in United States https://oec.world/en/profile/bilateral-product/machinery-mechanical-appliances-parts/reporter/usa <br>
   - Electrical machinery and electrics. https://oec.world/en/profile/bilateral-product/electrical-machinery-and-electronics/reporter/usa <br>
   - Machines https://oec.world/en/profile/bilateral-product/machines/reporter/usa <br>
- - Chemicals: <br>
+ Chemicals: <br>
   - organic chemicals https://oec.world/en/profile/bilateral-product/organic-chemicals/reporter/usa <br>
   - Chemical https://oec.world/en/profile/bilateral-product/chemical-products/reporter/usa <br>
   - halogenated hydrocarbons https://oec.world/en/profile/bilateral-product/halogenated-hydrocarbons/reporter/usa <br>
- - Other Materials: <br>
+ Other Materials: <br>
   - Metal https://oec.world/en/profile/bilateral-product/metals/reporter/usa <br>
   - Textiles https://oec.world/en/profile/bilateral-product/textiles/reporter/usa <br>
 </p>
