@@ -38,20 +38,21 @@ d. Import/Export toggle
 <p> Sources: </p>
 <p> Overall:
  - https://oec.world/en/profile/hs/coffee-not-roasted-not-decaffeinated?latestTrendsYAxisSelector=linear#market-dynamics </p><br>
-<p>Industries: </p>
- <p>- Fish: </p>
-  - <p> non-fillet frozen fish https://oec.world/en/profile/bilateral-product/non-fillet-frozen-fish/reporter/usa <br>
+<p>
+ Industries:<br>
+ - Fish: <br>
+  -non-fillet frozen fish https://oec.world/en/profile/bilateral-product/non-fillet-frozen-fish/reporter/usa <br>
   - non-fillet fresh fish https://oec.world/en/profile/bilateral-product/non-fillet-fresh-fish/reporter/usa <br>
-  - fish fillets https://oec.world/en/profile/bilateral-product/fish-fillets/reporter/usa </p>
+  - fish fillets https://oec.world/en/profile/bilateral-product/fish-fillets/reporter/usa <br>
  - Machine:
   - Machinery, mechanical appliances, & parts in United States https://oec.world/en/profile/bilateral-product/machinery-mechanical-appliances-parts/reporter/usa
   - Electrical machinery and electrics. https://oec.world/en/profile/bilateral-product/electrical-machinery-and-electronics/reporter/usa
   - Machines https://oec.world/en/profile/bilateral-product/machines/reporter/usa
-- Chemicals:
- - organic chemicals https://oec.world/en/profile/bilateral-product/organic-chemicals/reporter/usa
- - Chemical https://oec.world/en/profile/bilateral-product/chemical-products/reporter/usa
- - halogenated hydrocarbons https://oec.world/en/profile/bilateral-product/halogenated-hydrocarbons/reporter/usa
-- Other Materials:
- - Metal https://oec.world/en/profile/bilateral-product/metals/reporter/usa
- - Textiles https://oec.world/en/profile/bilateral-product/textiles/reporter/usa
+ - Chemicals:
+  - organic chemicals https://oec.world/en/profile/bilateral-product/organic-chemicals/reporter/usa
+  - Chemical https://oec.world/en/profile/bilateral-product/chemical-products/reporter/usa
+  - halogenated hydrocarbons https://oec.world/en/profile/bilateral-product/halogenated-hydrocarbons/reporter/usa
+ - Other Materials:
+  - Metal https://oec.world/en/profile/bilateral-product/metals/reporter/usa
+  - Textiles https://oec.world/en/profile/bilateral-product/textiles/reporter/usa
 </p>
