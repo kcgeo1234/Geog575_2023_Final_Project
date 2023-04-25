@@ -1,0 +1,216 @@
+"Year","Continent ID","Continent","Country ID","Country","Trade Value"
+2021,"af","Africa","afago","Angola",167259703
+2021,"af","Africa","afbdi","Burundi",1568123
+2021,"af","Africa","afben","Benin",8883489
+2021,"af","Africa","afbfa","Burkina Faso",41060010
+2021,"af","Africa","afbwa","Botswana",19391256
+2021,"af","Africa","afcaf","Central African Republic",5768572
+2021,"af","Africa","afciv","Cote d'Ivoire",40603797
+2021,"af","Africa","afcmr","Cameroon",33256799
+2021,"af","Africa","afcod","Democratic Republic of the Congo",30067274
+2021,"af","Africa","afcog","Republic of the Congo",21584861
+2021,"af","Africa","afcom","Comoros",269188
+2021,"af","Africa","afcpv","Cape Verde",1807023
+2021,"af","Africa","afdji","Djibouti",46262056
+2021,"af","Africa","afdza","Algeria",258933266
+2021,"af","Africa","afegy","Egypt",622580265
+2021,"af","Africa","aferi","Eritrea",2448324
+2021,"af","Africa","afeth","Ethiopia",147577445
+2021,"af","Africa","afgab","Gabon",37783335
+2021,"af","Africa","afgha","Ghana",122148586
+2021,"af","Africa","afgin","Guinea",15507564
+2021,"af","Africa","afgmb","Gambia",3980772
+2021,"af","Africa","afgnb","Guinea-Bissau",813732
+2021,"af","Africa","afgnq","Equatorial Guinea",20071849
+2021,"af","Africa","afken","Kenya",86696882
+2021,"af","Africa","aflbr","Liberia",16491824
+2021,"af","Africa","aflby","Libya",48349714
+2021,"af","Africa","aflso","Lesotho",690854
+2021,"af","Africa","afmar","Morocco",453985688
+2021,"af","Africa","afmdg","Madagascar",23116332
+2021,"af","Africa","afmli","Mali",25688281
+2021,"af","Africa","afmoz","Mozambique",53044467
+2021,"af","Africa","afmrt","Mauritania",32632321
+2021,"af","Africa","afmus","Mauritius",23929725
+2021,"af","Africa","afmwi","Malawi",3670380
+2021,"af","Africa","afnam","Namibia",28285269
+2021,"af","Africa","afner","Niger",52556195
+2021,"af","Africa","afnga","Nigeria",384865869
+2021,"af","Africa","afrwa","Rwanda",13438377
+2021,"af","Africa","afsdn","Sudan",596777
+2021,"af","Africa","afsen","Senegal",59402232
+2021,"af","Africa","afshn","Saint Helena",764312
+2021,"af","Africa","afsle","Sierra Leone",5332327
+2021,"af","Africa","afsom","Somalia",3655606
+2021,"af","Africa","afssd","South Sudan",25213455
+2021,"af","Africa","afstp","Sao Tome and Principe",1137635
+2021,"af","Africa","afswz","Eswatini",2976050
+2021,"af","Africa","afsyc","Seychelles",4223202
+2021,"af","Africa","aftcd","Chad",19133297
+2021,"af","Africa","aftgo","Togo",11506142
+2021,"af","Africa","aftun","Tunisia",58199949
+2021,"af","Africa","aftza","Tanzania",43084899
+2021,"af","Africa","afuga","Uganda",29050342
+2021,"af","Africa","afzaf","South Africa",1242760630
+2021,"af","Africa","afzmb","Zambia",46140403
+2021,"af","Africa","afzwe","Zimbabwe",15736888
+2021,"an","Antarctica","anatf","French South Antarctic Territory",2627751
+2021,"as","Asia","asafg","Afghanistan",40379508
+2021,"as","Asia","asare","United Arab Emirates",5560269406
+2021,"as","Asia","asarm","Armenia",18391165
+2021,"as","Asia","asaze","Azerbaijan",87608378
+2021,"as","Asia","asbgd","Bangladesh",167486996
+2021,"as","Asia","asbhr","Bahrain",176117580
+2021,"as","Asia","asbrn","Brunei",112140802
+2021,"as","Asia","asbtn","Bhutan",1825463
+2021,"as","Asia","ascck","Cocos (Keeling) Islands",287471
+2021,"as","Asia","aschn","China",32167992368
+2021,"as","Asia","ascxr","Christmas Island",308562
+2021,"as","Asia","ascyp","Cyprus",19964600
+2021,"as","Asia","asgeo","Georgia",28979503
+2021,"as","Asia","ashkg","Hong Kong",13910650970
+2021,"as","Asia","asidn","Indonesia",909835533
+2021,"as","Asia","asind","India",3969564736
+2021,"as","Asia","asiot","British Indian Ocean Territory",2933898
+2021,"as","Asia","asirn","Iran",236680
+2021,"as","Asia","asirq","Iraq",264745241
+2021,"as","Asia","asisr","Israel",3203550956
+2021,"as","Asia","asjor","Jordan",119585668
+2021,"as","Asia","asjpn","Japan",10633071036
+2021,"as","Asia","askaz","Kazakhstan",208902309
+2021,"as","Asia","askgz","Kyrgyzstan",21367277
+2021,"as","Asia","askhm","Cambodia",28082065
+2021,"as","Asia","askor","South Korea",10603252558
+2021,"as","Asia","askwt","Kuwait",377774228
+2021,"as","Asia","aslao","Laos",19704415
+2021,"as","Asia","aslbn","Lebanon",88680387
+2021,"as","Asia","aslka","Sri Lanka",59744529
+2021,"as","Asia","asmac","Macau",29808212
+2021,"as","Asia","asmdv","Maldives",18585856
+2021,"as","Asia","asmmr","Burma",21071795
+2021,"as","Asia","asmng","Mongolia",63579062
+2021,"as","Asia","asmys","Malaysia",7631057888
+2021,"as","Asia","asnpl","Nepal",25847240
+2021,"as","Asia","asomn","Oman",202538235
+2021,"as","Asia","aspak","Pakistan",358581217
+2021,"as","Asia","asphl","Philippines",2742932345
+2021,"as","Asia","aspse","Palestine",7247535
+2021,"as","Asia","asqat","Qatar",822273210
+2021,"as","Asia","assau","Saudi Arabia",2080853214
+2021,"as","Asia","assgp","Singapore",11481144904
+2021,"as","Asia","assyr","Syria",278124
+2021,"as","Asia","astha","Thailand",3325741812
+2021,"as","Asia","astjk","Tajikistan",3646540
+2021,"as","Asia","astkm","Turkmenistan",16338886
+2021,"as","Asia","astls","Timor-Leste",498061
+2021,"as","Asia","astur","Turkey",1429180371
+2021,"as","Asia","asuzb","Uzbekistan",75253051
+2021,"as","Asia","asvnm","Vietnam",2877036850
+2021,"as","Asia","asxxb","Chinese Taipei",10858067851
+2021,"as","Asia","asyem","Yemen",5247703
+2021,"eu","Europe","eualb","Albania",11333733
+2021,"eu","Europe","euand","Andorra",556325
+2021,"eu","Europe","euaut","Austria",579613686
+2021,"eu","Europe","eubel","Belgium",3456342721
+2021,"eu","Europe","eubgr","Bulgaria",108861830
+2021,"eu","Europe","eubih","Bosnia and Herzegovina",19681008
+2021,"eu","Europe","eublr","Belarus",88693360
+2021,"eu","Europe","euche","Switzerland",1527911071
+2021,"eu","Europe","eucze","Czechia",1715878866
+2021,"eu","Europe","eudeu","Germany",14817638056
+2021,"eu","Europe","eudnk","Denmark",600794274
+2021,"eu","Europe","euesp","Spain",1892829108
+2021,"eu","Europe","euest","Estonia",201652885
+2021,"eu","Europe","eufin","Finland",522065914
+2021,"eu","Europe","eufra","France",7579842357
+2021,"eu","Europe","eugbr","United Kingdom",12013966993
+2021,"eu","Europe","eugib","Gibraltar",564533
+2021,"eu","Europe","eugrc","Greece",341006539
+2021,"eu","Europe","euhrv","Croatia",49280037
+2021,"eu","Europe","euhun","Hungary",1803883224
+2021,"eu","Europe","euirl","Ireland",3033968292
+2021,"eu","Europe","euisl","Iceland",111654008
+2021,"eu","Europe","euita","Italy",3225924164
+2021,"eu","Europe","eultu","Lithuania",127037609
+2021,"eu","Europe","eulux","Luxembourg",378186748
+2021,"eu","Europe","eulva","Latvia",88748019
+2021,"eu","Europe","eumda","Moldova",17439955
+2021,"eu","Europe","eumkd","North Macedonia",18566431
+2021,"eu","Europe","eumlt","Malta",20104368
+2021,"eu","Europe","eumne","Montenegro",9377856
+2021,"eu","Europe","eunld","Netherlands",10696574771
+2021,"eu","Europe","eunor","Norway",1088413324
+2021,"eu","Europe","eupol","Poland",2567093824
+2021,"eu","Europe","euprt","Portugal",203969625
+2021,"eu","Europe","eurou","Romania",301465111
+2021,"eu","Europe","eurus","Russia",2339183988
+2021,"eu","Europe","eusmr","San Marino",494395
+2021,"eu","Europe","eusrb","Serbia",91480780
+2021,"eu","Europe","eusvk","Slovakia",150144456
+2021,"eu","Europe","eusvn","Slovenia",109049980
+2021,"eu","Europe","euswe","Sweden",1091926872
+2021,"eu","Europe","euukr","Ukraine",368830748
+2021,"na","North America","naabw","Aruba",74330999
+2021,"na","North America","naaia","Anguilla",17986683
+2021,"na","North America","naatg","Antigua and Barbuda",34294651
+2021,"na","North America","nabhs","Bahamas",284063309
+2021,"na","North America","nablz","Belize",59447358
+2021,"na","North America","nabmu","Bermuda",83944344
+2021,"na","North America","nabrb","Barbados",152488354
+2021,"na","North America","nacan","Canada",55901701592
+2021,"na","North America","nacri","Costa Rica",1310473304
+2021,"na","North America","nacub","Cuba",3134213
+2021,"na","North America","nacuw","Curaçao",48946647
+2021,"na","North America","nacym","Cayman Islands",150601233
+2021,"na","North America","nadma","Dominica",16783834
+2021,"na","North America","nadom","Dominican Republic",1281007482
+2021,"na","North America","nagrd","Grenada",30393392
+2021,"na","North America","nagrl","Greenland",7838099
+2021,"na","North America","nagtm","Guatemala",971636791
+2021,"na","North America","nahnd","Honduras",593188994
+2021,"na","North America","nahti","Haiti",100437197
+2021,"na","North America","najam","Jamaica",279933016
+2021,"na","North America","nakna","Saint Kitts and Nevis",36311672
+2021,"na","North America","nalca","Saint Lucia",31094898
+2021,"na","North America","namaf","Saint Martin",33647754
+2021,"na","North America","namex","Mexico",73301684205
+2021,"na","North America","namsr","Montserrat",2433678
+2021,"na","North America","nanic","Nicaragua",336292157
+2021,"na","North America","napan","Panama",753340074
+2021,"na","North America","naslv","El Salvador",434877249
+2021,"na","North America","natca","Turks and Caicos Islands",30409541
+2021,"na","North America","natto","Trinidad and Tobago",583252259
+2021,"na","North America","navct","Saint Vincent and the Grenadines",27576121
+2021,"na","North America","navgb","British Virgin Islands",30118366
+2021,"oc","Oceania","ocaus","Australia",7390598801
+2021,"oc","Oceania","occok","Cook Islands",338348
+2021,"oc","Oceania","ocfji","Fiji",11633038
+2021,"oc","Oceania","ocfsm","Micronesia",7864461
+2021,"oc","Oceania","ockir","Kiribati",605427
+2021,"oc","Oceania","ocmhl","Marshall Islands",16782925
+2021,"oc","Oceania","ocncl","New Caledonia",7259519
+2021,"oc","Oceania","ocniu","Niue",12854
+2021,"oc","Oceania","ocnru","Nauru",286794
+2021,"oc","Oceania","ocnzl","New Zealand",804542563
+2021,"oc","Oceania","ocplw","Palau",5856005
+2021,"oc","Oceania","ocpng","Papua New Guinea",20567348
+2021,"oc","Oceania","ocpyf","French Polynesia",14110058
+2021,"oc","Oceania","ocslb","Solomon Islands",2857276
+2021,"oc","Oceania","octon","Tonga",2383683
+2021,"oc","Oceania","octuv","Tuvalu",28501
+2021,"oc","Oceania","ocvut","Vanuatu",1803344
+2021,"oc","Oceania","ocwlf","Wallis and Futuna",6115
+2021,"oc","Oceania","ocwsm","Samoa",2578028
+2021,"sa","South America","saarg","Argentina",1610428652
+2021,"sa","South America","sabol","Bolivia",166825391
+2021,"sa","South America","sabra","Brazil",6961258533
+2021,"sa","South America","sachl","Chile",2813047675
+2021,"sa","South America","sacol","Colombia",1842250769
+2021,"sa","South America","saecu","Ecuador",757708175
+2021,"sa","South America","saflk","Falkland Islands",223453
+2021,"sa","South America","saguy","Guyana",332938978
+2021,"sa","South America","saper","Peru",1468790913
+2021,"sa","South America","sapry","Paraguay",732180419
+2021,"sa","South America","sasur","Suriname",130726908
+2021,"sa","South America","saury","Uruguay",231984800
+2021,"sa","South America","saven","Venezuela",455159197
