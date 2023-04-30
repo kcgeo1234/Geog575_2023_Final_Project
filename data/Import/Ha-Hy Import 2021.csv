@@ -1,0 +1,52 @@
+"Year","Continent ID","Continent","Country ID","Country","Trade Value"
+2021,"af","Africa","afago","Angola",312
+2021,"af","Africa","afzaf","South Africa",7456
+2021,"as","Asia","asare","United Arab Emirates",842573
+2021,"as","Asia","asarm","Armenia",6177.000000000001
+2021,"as","Asia","asbgd","Bangladesh",633299
+2021,"as","Asia","asbrn","Brunei",54099
+2021,"as","Asia","aschn","China",565122290.9999999
+2021,"as","Asia","ascyp","Cyprus",25151.999999999996
+2021,"as","Asia","ashkg","Hong Kong",65040
+2021,"as","Asia","asidn","Indonesia",96096
+2021,"as","Asia","asind","India",92208534
+2021,"as","Asia","asisr","Israel",2113524
+2021,"as","Asia","asjpn","Japan",56621253
+2021,"as","Asia","askor","South Korea",9269346
+2021,"as","Asia","asmys","Malaysia",261666.00000000003
+2021,"as","Asia","assau","Saudi Arabia",672410
+2021,"as","Asia","assgp","Singapore",1911052
+2021,"as","Asia","astha","Thailand",85
+2021,"as","Asia","astur","Turkey",28796
+2021,"as","Asia","asvnm","Vietnam",65807
+2021,"as","Asia","asxxb","Chinese Taipei",1066990
+2021,"eu","Europe","euaut","Austria",2998
+2021,"eu","Europe","eubel","Belgium",15925806
+2021,"eu","Europe","euche","Switzerland",285806
+2021,"eu","Europe","eucze","Czechia",505165
+2021,"eu","Europe","eudeu","Germany",98629153
+2021,"eu","Europe","eudnk","Denmark",14900.999999999998
+2021,"eu","Europe","euesp","Spain",905360
+2021,"eu","Europe","eufin","Finland",3043.9999999999995
+2021,"eu","Europe","eufra","France",28332489
+2021,"eu","Europe","eugbr","United Kingdom",11049333
+2021,"eu","Europe","euhun","Hungary",161514
+2021,"eu","Europe","euirl","Ireland",1642
+2021,"eu","Europe","euita","Italy",2497889
+2021,"eu","Europe","eunld","Netherlands",28295272.000000004
+2021,"eu","Europe","eunor","Norway",17125.999999999996
+2021,"eu","Europe","eupol","Poland",1177344
+2021,"eu","Europe","eurus","Russia",9778589
+2021,"eu","Europe","eusvk","Slovakia",462098
+2021,"eu","Europe","euswe","Sweden",350
+2021,"eu","Europe","euukr","Ukraine",255020
+2021,"na","North America","nacan","Canada",1606315
+2021,"na","North America","nagtm","Guatemala",4370
+2021,"na","North America","nahnd","Honduras",2800
+2021,"na","North America","namex","Mexico",17949288
+2021,"oc","Oceania","ocaus","Australia",6188
+2021,"oc","Oceania","ocnzl","New Zealand",47
+2021,"sa","South America","sabra","Brazil",11006175.999999998
+2021,"sa","South America","sachl","Chile",4931
+2021,"sa","South America","sacol","Colombia",11765
+2021,"sa","South America","sasur","Suriname",12922
