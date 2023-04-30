@@ -6,6 +6,7 @@
             <title></title>
 
         <!--put your external stylesheet links here-->
+        <link rel="stylesheet" href="lib/leaflet.css">
         <link rel="stylesheet" href="css/style.css">
         <!--[if IE<9]>
             <link rel="stylesheet" href="css/style.ie.css">
@@ -18,11 +19,45 @@
 
     <body>
         <!--put your initial page content here-->
-        
+        <div id="title"></div>
+        <div class="sidenav">
+            <button class="dropdown-btn">
+                Select Category
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <button class="cateName"><b>Fish</b></button>
+                <div class="dropdown-attrName">
+                    <button class="attrName" id="frozenFish">Non-Fillet Frozen Fish</button>
+                    <!-- <button class="attrName">Non-Fillet Fresh Fish</button>
+                    <button class="attrName">Fish Fillets</button> -->
+                </div>
+                <!-- <button class="cateName"><b>Machinery</b></button>
+                <div class="dropdown-attrName">
+                    <button class="attrName">Machinery, Mechanical Appliances, & Parts</button>
+                    <button class="attrName">Electrical Machinery and Electrics</button>
+                    <button class="attrName">Machines</button>
+                </div>
+                <button class="cateName"><b>Chemicals</b></button>
+                <div class="dropdown-attrName">
+                    <button class="attrName">Organic Chemicals</button>
+                    <button class="attrName">Chemical</button>
+                    <button class="attrName">Halogenated Hydrocarbons</button>
+                </div> -->
+                <button class="cateName"><b>Other Materials</b></button>
+                <div class="dropdown-attrName">
+                    <button class="attrName" id="metal">Metal </button>
+                    <!-- <button class="attrName">Textiles</button> -->
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <div id="panel"></div>
         <!--you can also use this space for internal scripts;
         place these within <script> tags-->
 
         <!--put your external script links here-->
+        <script type="text/javascript" src="lib/leaflet-src.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
     </body>
