@@ -19,8 +19,9 @@
 
     <body>
         <!--put your initial page content here-->
-        <div id="title"></div>
+        <div id="title">Top Few Export <span class="titleAttr">Metal</span> in <span class="slider-year">2016</span></div>
         <div class="sidenav">
+            <button class="switch" id="export">Export</button> <button class="switch" id="import">Import</button>
             <button class="dropdown-btn">
                 Select Category
                 <i class="fa fa-caret-down"></i>
@@ -28,33 +29,31 @@
             <div class="dropdown-container">
                 <button class="cateName"><b>Fish</b></button>
                 <div class="dropdown-attrName">
-                    <button class="attrName" id="frozenFish">Non-Fillet Frozen Fish</button>
-                    <!-- <button class="attrName">Non-Fillet Fresh Fish</button>
-                    <button class="attrName">Fish Fillets</button> -->
+                    <button class="attrName" id="Non-Fillet_Frozen_Fish">Non-Fillet Frozen Fish</button>
+                    <!-- <button class="attrName" id="Non-Fillet_Fresh_Fish">Non-Fillet Fresh Fish</button>
+                    <button class="attrName" id="Fish_Fillets">Fish Fillets</button> -->
                 </div>
                 <!-- <button class="cateName"><b>Machinery</b></button>
                 <div class="dropdown-attrName">
-                    <button class="attrName">Machinery, Mechanical Appliances, & Parts</button>
-                    <button class="attrName">Electrical Machinery and Electrics</button>
-                    <button class="attrName">Machines</button>
+                    <button class="attrName" id="Machinery_Mechanical_Appliances_&_Parts">Machinery, Mechanical Appliances, & Parts</button>
+                    <button class="attrName" id="Electrical_Machinery_and_Electrics">Electrical Machinery and Electrics</button>
+                    <button class="attrName" id="Machines">Machines</button>
                 </div>
                 <button class="cateName"><b>Chemicals</b></button>
                 <div class="dropdown-attrName">
-                    <button class="attrName">Organic Chemicals</button>
-                    <button class="attrName">Chemical</button>
-                    <button class="attrName">Halogenated Hydrocarbons</button>
+                    <button class="attrName" id="Organic_Chemicals">Organic Chemicals</button>
+                    <button class="attrName" id="Chemical">Chemical</button>
+                    <button class="attrName" id="Halogenated_Hydrocarbons">Halogenated Hydrocarbons</button>
                 </div> -->
                 <button class="cateName"><b>Other Materials</b></button>
                 <div class="dropdown-attrName">
-                    <button class="attrName" id="metal">Metal </button>
-                    <!-- <button class="attrName">Textiles</button> -->
+                    <button class="attrName" id="Metal">Metal</button>
+                    <!-- <button class="attrName" id="Textiles">Textiles</button> -->
                 </div>
             </div>
         </div>
         <div id="map"></div>
         <div id="panel"></div>
-        <!--you can also use this space for internal scripts;
-        place these within <script> tags-->
 
         <!--put your external script links here-->
         <script type="text/javascript" src="lib/leaflet-src.js"></script>

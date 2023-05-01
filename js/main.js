@@ -11,7 +11,7 @@ var expressed = attrArray[0] + '_' + timeArray[0].toString;
 
 //function to instantiate the Leaflet map
 function createMap(){
-    dic = {"metal":"Metal_sample.geojson", "frozenFish":"frozenFish_sample.geojson"};
+    dic = {"Metal":"Metal_export_sample.geojson", "Non-Fillet_Frozen_Fish":"frozenFish_export_sample.geojson"};
     //create the map
     map = L.map('map').setView([30, 0], 2); // setView([lat, long], Zoom)
     //add OSM base tilelayer
@@ -23,43 +23,34 @@ function createMap(){
     getData();
 };
 
-
-// const dic = new Map();
-// dic["metal"] = "Metal_sample.geojson";
-// dic={"metal":"Metal_sample.geojson"}
-
 function getData(){
-  fetch("data/Metal_sample.geojson")
+  fetch("data/Metal_export_sample.geojson")
   .then(function(response){
     return response.json();
   })
   .then(function(json){
     var attributes = processData(json); //create an attributes array
     minValue = calcStats(json);
-    setTitleName()
     createPropSymbols(json, attributes);
     createSequenceControls(attributes);
-    createLegend(attributes);
+    createLegend(attributes, "Metal");
   })
   .then(function(){
     var attrName = document.getElementsByClassName('attrName');
     for(let i = 0; i < attrName.length; i++){
-      // console.log(attrName[i]);
       attrName[i].addEventListener('click', function (){
         var id = this.getAttribute("id");
         for(const key of Object.keys(dic)){
           if (id === key){
-            console.log("key= "+key)
-            updateMap(dic[id]);
+            updateMap(dic[id], id);
           }
         }
       });
     }
-
   })
 };
 
-function updateMap(file){
+function updateMap(file, mapName){
   fetch("data/"+file)
   .then(function(response){
     return response.json();
@@ -67,11 +58,34 @@ function updateMap(file){
   .then(function(json){
     var attributes = processData(json); //create an attributes array
     minValue = calcStats(json);
-    setTitleName()
+    deleteElement()
     createPropSymbols(json, attributes);
-    createSequenceControls(attributes);
-    createLegend(attributes);
+    createSequenceControls(attributes, mapName);
+    createLegend(attributes, mapName);
   })
+}
+
+function deleteElement(){
+  var sequence = document.getElementsByClassName("sequence-control-container");
+  var legend = document.getElementsByClassName("legend-control-container");
+  var symbol = document.getElementsByClassName("leaflet-interactive");
+  
+  sequence[0].remove();
+  legend[0].remove();
+
+  let size = symbol.length;
+
+  for (let i = 0; i < size; i++){
+    symbol[0].remove();
+ 
+  }
+
+}
+
+function getName(data){
+  properties2 = data.features[0].properties;
+  
+  return properties2["Name"]
 }
 
 function processData(data){
@@ -80,8 +94,6 @@ function processData(data){
 
   //push each attribute name into attributes array
   for (var attribute in properties){
-      //only take 4-digit year values in attributes
-
       attributes.push(attribute);
 
   };
@@ -117,6 +129,7 @@ function calcStats(data){
 };
 
 function createPropSymbols(data, attributes){
+
   //create a Leaflet GeoJSON layer and add it to the map
   L.geoJson(data, {
       pointToLayer: function(feature, latlng){
@@ -161,13 +174,7 @@ function calcPropRadius(attValue) {
   return radius;
 };
 
-function setTitleName(){
-  var title = document.getElementById("title");
-  title.innerHTML = "Top Few Export (Attribute Name) in (Year)"
-
-}
-
-function createLegend(attributes){
+function createLegend(attributes, mapName){
   var LegendControl = L.Control.extend({
       options: {
           position: 'bottomright'
@@ -178,7 +185,7 @@ function createLegend(attributes){
           var container = L.DomUtil.create('div', 'legend-control-container');
 
           //PUT YOUR SCRIPT TO CREATE THE TEMPORAL LEGEND HERE
-          container.innerHTML = '<p class="temporalLegend">AttributeName in year <span class="year">2016</span></p>';
+          container.innerHTML = `<p class="temporalLegend">${mapName} in year <span class="year">2016</span></p>`;
           //Step 1: start attribute legend svg string
           var svg = '<svg id="attribute-legend" width="200px" height="150px">';
           //array of circle names to base loop on
@@ -215,7 +222,7 @@ function createLegend(attributes){
 };
 
 // create UI control
-function createSequenceControls(attributes){
+function createSequenceControls(attributes, mapName){
   var SequenceControl = L.Control.extend({
       options: {
           position: 'bottomleft'
@@ -224,9 +231,6 @@ function createSequenceControls(attributes){
       onAdd: function () {
           // create the control container div with a particular class name
           var container = L.DomUtil.create('div', 'sequence-control-container');
-          var title = document.getElementById("title");
-          title.innerHTML = "Top Few Export (Attribute Name) in 2016"
-          
           //create range input element (slider)
           container.insertAdjacentHTML('beforeend', '<p class="slider-label">Year: <span class="slider-year">2016</span></p>')
           container.insertAdjacentHTML('beforeend', '<input class="range-slider" type="range">')
@@ -244,6 +248,14 @@ function createSequenceControls(attributes){
   document.querySelector(".range-slider").min = 0;
   document.querySelector(".range-slider").value = 0;
   document.querySelector(".range-slider").step = 1;
+  console.log(mapName)
+  if (mapName){
+    // Update title attribute name
+    var titleAttr = document.querySelector('.titleAttr');
+    titleAttr.innerHTML = mapName;}
+    else{
+      //pass
+    }
 
   //Step 5: input listener for slider
   document.querySelector('.range-slider').addEventListener('input', function(){            
@@ -258,18 +270,21 @@ function createPopupContent(properties, attribute){
   //add StationName and formatted attribute (ridership data) to popup content string
   var popupContent = "<p><b>Country name:</b> " + properties.Name + "</p>";
   var year = attribute;
+  popupContent += "<p><b>From:</b> the United States</p>";
   properties[attribute] == 0 ? popupContent += "0 Value":
-  popupContent += "<p><b>Export in " + year + ":</b>" + properties[attribute] + "</p>";
+  popupContent += "<p><b>Year: " + year + ":</b>" + properties[attribute] + "</p>";
   return popupContent;
 };
 
 function updatePropSymbols(attribute){
   var year = attribute;
-  var title = document.getElementById("title");
-  title.innerHTML = `Top Few Export (Attribute Name) in ${year}`
   //update temporal legend
   document.querySelector("span.year").innerHTML = year;
-  document.querySelector("span.slider-year").innerHTML = year;
+  yearChange = document.querySelectorAll("span.slider-year")
+  for (let i=0; i < yearChange.length; i++){
+    yearChange[i].innerHTML = year;
+  }
+  
 
 
   map.eachLayer(function(layer){
@@ -294,7 +309,6 @@ function updatePropSymbols(attribute){
 function setdropdown(){
     var dropdown = document.getElementsByClassName("dropdown-btn");
     var cateOpt = document.getElementsByClassName("cateName");
-    // var dropAttr = document.getElementsByClassName("dropdown-attrName");
     var i;
 
     for (i = 0; i < dropdown.length; i++) {
@@ -319,7 +333,6 @@ function setdropdown(){
       cateOpt[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var dropdownContent = this.nextElementSibling;
-        // console.log(dropdownContent.style.display);
         if (dropdownContent.style.display === "block") {
           dropdownContent.style.display = "none";
         } else {
