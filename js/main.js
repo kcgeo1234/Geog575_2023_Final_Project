@@ -185,7 +185,7 @@ function createLegend(attributes, mapName){
           var container = L.DomUtil.create('div', 'legend-control-container');
 
           //PUT YOUR SCRIPT TO CREATE THE TEMPORAL LEGEND HERE
-          container.innerHTML = `<p class="temporalLegend">${mapName} in year <span class="year">2016</span></p>`;
+          container.innerHTML = `<p class="temporalLegend">${mapName} in year <span class="year">2016 (USD)</span></p>`;
           //Step 1: start attribute legend svg string
           var svg = '<svg id="attribute-legend" width="200px" height="150px">';
           //array of circle names to base loop on
@@ -196,15 +196,15 @@ function createLegend(attributes, mapName){
               
               //Step 3: assign the r and cy attributes  
               var radius = calcPropRadius(dataStats[circles[i]]);  
-              var cy = 130 - radius;  
+              var cy = 80 - radius;  
               //circle string
               svg += '<circle class="legend-circle" id="' + 
               circles[i] + '" r="' + radius + '"cy="' + cy + '" fill="#F47821" fill-opacity="0.8" stroke="#000000" cx="70"/>'; 
               
               //evenly space out labels            
-              var textY = i * 40 + 40;            
+              var textY = i * 20 + 35;            
               //text string            
-              svg += '<text id="' + circles[i] + '-text" x="140" y="' + textY + '">' + Math.round(dataStats[circles[i]]*100)/100+ '</text>';
+              svg += '<text id="' + circles[i] + '-text" x="110" y="' + textY + '">' + Math.round(dataStats[circles[i]]/1000000)+ ' Million</text>';
 
           };
           //close svg string
