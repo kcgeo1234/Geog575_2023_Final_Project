@@ -44,6 +44,8 @@ function getData(){
         var id = this.getAttribute("id");
         for(const key of Object.keys(dic)){
           if (id === key){
+            var img = document.getElementById("spikeLine");
+            img.src = `img/${id}.png`;
             updateMap(dic[id], id);
           }
         }
@@ -181,7 +183,7 @@ function createLegend(attributes, mapName){
       //PUT YOUR SCRIPT TO CREATE THE TEMPORAL LEGEND HERE
       container.insertAdjacentHTML("beforeend",`<p class="temporalLegend">${mapName} in year <span class="year">2016</span> (USD)</p>`);
       //Step 1: start attribute legend svg string
-      var svg = '<svg id="attribute-legend" width="400px" height="150px">';
+      var svg = '<svg id="attribute-legend" width="400px" height="120px">';
       //array of circle names to base loop on
       var circles = ["max", "mean", "min"];
 
@@ -193,7 +195,7 @@ function createLegend(attributes, mapName){
           var cy = 80 - radius;  
           //circle string
           svg += '<circle class="legend-circle" id="' + 
-          circles[i] + '" r="' + radius + '"cy="' + cy + '" fill="#F47821" fill-opacity="0.8" stroke="#000000" cx="200"/>'; 
+          circles[i] + '" r="' + radius + '"cy="' + cy + '" fill="#F47821" fill-opacity="0.8" stroke="#000000" cx="210"/>'; 
           
           //evenly space out labels            
           var textY = i * 20 + 35;            
@@ -242,13 +244,13 @@ function createSequenceControls(attributes, mapName){
   document.querySelector(".range-slider").min = 0;
   document.querySelector(".range-slider").value = 0;
   document.querySelector(".range-slider").step = 1;
-  if (mapName){
-    // Update title attribute name
-    var titleAttr = document.querySelector('.titleAttr');
-    titleAttr.innerHTML = mapName;}
-    else{
-      //pass
-    }
+  // if (mapName){
+  //   // Update title attribute name
+  //   var titleAttr = document.querySelector('.titleAttr');
+  //   titleAttr.innerHTML = mapName;}
+  //   else{
+  //     //pass
+  //   }
 
   //Step 5: input listener for slider
   document.querySelector('.range-slider').addEventListener('input', function(){            

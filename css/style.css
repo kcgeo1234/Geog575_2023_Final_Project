@@ -12,6 +12,12 @@
     margin-left: 350px;
 }
 
+#spikeLine{
+  position: absolute;
+  top: 70px;
+}
+
+
 p.slider-label{
   position: absolute;
   top: 160px;
@@ -21,13 +27,13 @@ p.slider-label{
 
 .range-slider {
   position: relative;
-  top: -70px;
+  top: -40px;
   z-index: 9999;
 }
 
 
 #attribute-legend {
-  fill:white
+  fill:white;
 }
 
 p.temporalLegend {
@@ -131,8 +137,8 @@ p.temporalLegend {
   padding-left: 8px;
 }
 
-/* Optional: Style the caret down icon */
 .fa-caret-down {
+  color: white;
   float: right;
   padding-right: 8px;
-}  */
+}
