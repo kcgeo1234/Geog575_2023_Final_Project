@@ -6,7 +6,9 @@
             <title></title>
 
         <!--put your external stylesheet links here-->
+        <link rel="stylesheet" href="lib/leaflet.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--[if IE<9]>
             <link rel="stylesheet" href="css/style.ie.css">
         <![endif]-->
@@ -18,11 +20,45 @@
 
     <body>
         <!--put your initial page content here-->
-        
-        <!--you can also use this space for internal scripts;
-        place these within <script> tags-->
+        <div class="sidenav">
+            <img id="spikeLine" src="img/Metal.png" width="170" height="80" alt="Something's wrong here">
+            <div class="sidebar-legend" style="height: 180px;">
+            </div>
+            <button class="dropdown-btn">
+                Select Category
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <button class="cateName"><b>Fish</b></button>
+                <div class="dropdown-attrName">
+                    <button class="attrName" id="Non-Fillet Frozen Fish">Non-Fillet Frozen Fish</button>
+                    <!-- <button class="attrName" id="Non-Fillet Fresh Fish">Non-Fillet Fresh Fish</button>
+                    <button class="attrName" id="Fish Fillets">Fish Fillets</button> -->
+                </div>
+                <!-- <button class="cateName"><b>Machinery</b></button>
+                <div class="dropdown-attrName">
+                    <button class="attrName" id="Machinery Mechanical Appliances & Parts">Machinery, Mechanical Appliances, & Parts</button>
+                    <button class="attrName" id="Electrical Machinery and Electrics">Electrical Machinery and Electrics</button>
+                    <button class="attrName" id="Machines">Machines</button>
+                </div>
+                <button class="cateName"><b>Chemicals</b></button>
+                <div class="dropdown-attrName">
+                    <button class="attrName" id="Organic Chemicals">Organic Chemicals</button>
+                    <button class="attrName" id="Chemical">Chemical</button>
+                    <button class="attrName" id="Halogenated Hydrocarbons">Halogenated Hydrocarbons</button>
+                </div> -->
+                <button class="cateName"><b>Other Materials</b></button>
+                <div class="dropdown-attrName">
+                    <button class="attrName" id="Metal">Metal</button>
+                    <!-- <button class="attrName" id="Textiles">Textiles</button> -->
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <div id="panel"></div>
 
         <!--put your external script links here-->
+        <script type="text/javascript" src="lib/leaflet-src.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
     </body>
