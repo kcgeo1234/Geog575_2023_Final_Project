@@ -11,7 +11,9 @@ var expressed = attrArray[0] + '_' + timeArray[0].toString;
 
 //function to instantiate the Leaflet map
 function createMap(){
-    dic = {"Metal":"Metal_export_sample.geojson", "Non-Fillet_Frozen_Fish":"frozenFish_export_sample.geojson"};
+    dic ={"Metal":"Metal_export_sample.geojson", 
+          "Non-Fillet_Frozen_Fish":"frozenFish_export_sample.geojson"
+        };
     //create the map
     map = L.map('map').setView([30, 0], 2); // setView([lat, long], Zoom)
     //add OSM base tilelayer
@@ -32,8 +34,8 @@ function getData(){
     var attributes = processData(json); //create an attributes array
     minValue = calcStats(json);
     createPropSymbols(json, attributes);
-    createSequenceControls(attributes);
     createLegend(attributes, "Metal");
+    createSequenceControls(attributes);
   })
   .then(function(){
     var attrName = document.getElementsByClassName('attrName');
@@ -60,18 +62,16 @@ function updateMap(file, mapName){
     minValue = calcStats(json);
     deleteElement()
     createPropSymbols(json, attributes);
-    createSequenceControls(attributes, mapName);
     createLegend(attributes, mapName);
+    createSequenceControls(attributes, mapName);
   })
 }
 
 function deleteElement(){
-  var sequence = document.getElementsByClassName("sequence-control-container");
-  var legend = document.getElementsByClassName("legend-control-container");
-  var symbol = document.getElementsByClassName("leaflet-interactive");
   
-  sequence[0].remove();
-  legend[0].remove();
+  document.querySelector(".sidebar-legend").innerHTML = "";
+  
+  var symbol = document.getElementsByClassName("leaflet-interactive");
 
   let size = symbol.length;
 
@@ -129,7 +129,6 @@ function calcStats(data){
 };
 
 function createPropSymbols(data, attributes){
-
   //create a Leaflet GeoJSON layer and add it to the map
   L.geoJson(data, {
       pointToLayer: function(feature, latlng){
@@ -175,55 +174,50 @@ function calcPropRadius(attValue) {
 };
 
 function createLegend(attributes, mapName){
-  var LegendControl = L.Control.extend({
-      options: {
-          position: 'bottomright'
-      },
 
-      onAdd: function () {
-          // create the control container with a particular class name
-          var container = L.DomUtil.create('div', 'legend-control-container');
+    // create the control container with a particular class name
+      var container = document.querySelector(".sidebar-legend");
 
-          //PUT YOUR SCRIPT TO CREATE THE TEMPORAL LEGEND HERE
-          container.innerHTML = `<p class="temporalLegend">${mapName} in year <span class="year">2016 (USD)</span></p>`;
-          //Step 1: start attribute legend svg string
-          var svg = '<svg id="attribute-legend" width="200px" height="150px">';
-          //array of circle names to base loop on
-          var circles = ["max", "mean", "min"];
+      //PUT YOUR SCRIPT TO CREATE THE TEMPORAL LEGEND HERE
+      container.insertAdjacentHTML("beforeend",`<p class="temporalLegend">${mapName} in year <span class="year">2016</span> (USD)</p>`);
+      //Step 1: start attribute legend svg string
+      var svg = '<svg id="attribute-legend" width="400px" height="150px">';
+      //array of circle names to base loop on
+      var circles = ["max", "mean", "min"];
 
-          //Step 2: loop to add each circle and text to svg string
-          for (var i=0; i<circles.length; i++){
-              
-              //Step 3: assign the r and cy attributes  
-              var radius = calcPropRadius(dataStats[circles[i]]);  
-              var cy = 80 - radius;  
-              //circle string
-              svg += '<circle class="legend-circle" id="' + 
-              circles[i] + '" r="' + radius + '"cy="' + cy + '" fill="#F47821" fill-opacity="0.8" stroke="#000000" cx="70"/>'; 
-              
-              //evenly space out labels            
-              var textY = i * 20 + 35;            
-              //text string            
-              svg += '<text id="' + circles[i] + '-text" x="110" y="' + textY + '">' + Math.round(dataStats[circles[i]]/1000000)+ ' Million</text>';
-
-          };
-          //close svg string
-          svg += "</svg>";
+      //Step 2: loop to add each circle and text to svg string
+      for (var i=0; i<circles.length; i++){
           
-          //add attribute legend svg to container
-          container.insertAdjacentHTML('beforeend',svg);
-          // container.innerHTML += svg;
+          //Step 3: assign the r and cy attributes  
+          var radius = calcPropRadius(dataStats[circles[i]]);  
+          var cy = 80 - radius;  
+          //circle string
+          svg += '<circle class="legend-circle" id="' + 
+          circles[i] + '" r="' + radius + '"cy="' + cy + '" fill="#F47821" fill-opacity="0.8" stroke="#000000" cx="200"/>'; 
+          
+          //evenly space out labels            
+          var textY = i * 20 + 35;            
+          //text string            
+          svg += '<text id="' + circles[i] + '-text" x="250" y="' + textY + '">' + Math.round(dataStats[circles[i]]/1000000)+ ' Million</text>';
 
-          return container;
-      }
-  });
+      };
+      //close svg string
+      svg += "</svg>";
+      
+      //add attribute legend svg to container
+      container.insertAdjacentHTML('beforeend',svg);
+      // container.innerHTML += svg;
 
-  map.addControl(new LegendControl());
 };
 
 // create UI control
 function createSequenceControls(attributes, mapName){
-  var SequenceControl = L.Control.extend({
+  var container = document.querySelector(".sidebar-legend");
+      container.insertAdjacentHTML('beforeend', '<p class="slider-label">Year: <span class="slider-year">2016</span></p>')
+      container.insertAdjacentHTML('beforeend', '<input class="range-slider" type="range">')
+  
+  
+  /*var SequenceControl = L.Control.extend({
       options: {
           position: 'bottomleft'
       },
@@ -239,16 +233,15 @@ function createSequenceControls(attributes, mapName){
 
           return container;
       }
-  });
+  });*/
 
-  map.addControl(new SequenceControl());    // add listeners after adding control}
+  //map.addControl(new SequenceControl());    // add listeners after adding control}
 
   //set slider attributes
   document.querySelector(".range-slider").max = 5;
   document.querySelector(".range-slider").min = 0;
   document.querySelector(".range-slider").value = 0;
   document.querySelector(".range-slider").step = 1;
-  console.log(mapName)
   if (mapName){
     // Update title attribute name
     var titleAttr = document.querySelector('.titleAttr');
