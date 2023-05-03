@@ -1,13 +1,17 @@
 /*insert style here*/
 
+body{
+  margin:0;
+}
+
 #title{
   font-size: large;
   color: white;
 }
 
 #map { 
-    height: 650px;
-    width: 75%;
+    height: 100vh;
+    width: calc(100% - 350px);
     display: inline-block;
     margin-left: 350px;
 }
