@@ -69,7 +69,7 @@ p.temporalLegend {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #818181;
+  color: grey;
   display: block;
   border: none;
   background: none;
@@ -77,6 +77,11 @@ p.temporalLegend {
   text-align: left;
   cursor: pointer;
   outline: none;
+}
+
+button.dropdown-btn {
+  padding-top: 10px;
+  border-top: 2px solid #1c1c1c;
 }
 
 
@@ -138,7 +143,6 @@ p.temporalLegend {
 }
 
 .fa-caret-down {
-  color: white;
   float: right;
   padding-right: 8px;
 }

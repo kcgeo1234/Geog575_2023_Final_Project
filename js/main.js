@@ -11,8 +11,17 @@ var expressed = attrArray[0] + '_' + timeArray[0].toString;
 
 //function to instantiate the Leaflet map
 function createMap(){
-    dic ={"Metal":"Metal_export_sample.geojson", 
-          "Non-Fillet_Frozen_Fish":"frozenFish_export_sample.geojson"
+    dic ={"Non-Fillet Frozen Fish":"frozenFish_export_sample.geojson",
+          "Non-Fillet Fresh Fish":"freshFish_export.geojson",
+          "Fish Fillets":"fishFillets_export.geojson",
+          "Machinery Mechanical Appliances & Parts":"MMAP_export.geojson",
+          "Electrical Machinery and Electrics":"EME_export.geojson",
+          "Machines":"machine_export.geojson",
+          "Organic Chemicals":"organicChemicals_export.geojson",
+          "Chemical":"chemical_export.geojson",
+          "Halogenated Hydrocarbons":"HH_export.geojson",
+          "Metal":"metal_export_sample.geojson",
+          "Textiles":"textiles_export.geojson"
         };
     //create the map
     map = L.map('map').setView([30, 0], 2); // setView([lat, long], Zoom)
@@ -26,7 +35,7 @@ function createMap(){
 };
 
 function getData(){
-  fetch("data/Metal_export_sample.geojson")
+  fetch("data/metal_export_sample.geojson")
   .then(function(response){
     return response.json();
   })
