@@ -35,7 +35,7 @@ function createMap(){
 };
 
 function getData(){
-  fetch("data/metal_export_sample.geojson")
+  fetch("data/Metal_export_sample.geojson")
   .then(function(response){
     return response.json();
   })
