@@ -3,45 +3,42 @@ var map;
 var minValue;
 var dataStats = {};
 var dic ={};
-var attrArray = ["Metal", "Textiles"];
-var timeArray = [2016, 2017, 2018, 2019, 2020, 2021]
-var expressed = attrArray[0] + '_' + timeArray[0].toString;
-
-
+var info;
 
 //function to instantiate the Leaflet map
 function createMap(){
-    dic ={"Non-Fillet Frozen Fish":"frozenFish_export_sample.geojson",
-          "Non-Fillet Fresh Fish":"freshFish_export.geojson",
-          "Fish Fillets":"fishFillets_export.geojson",
-          "Machinery Mechanical Appliances & Parts":"MMAP_export.geojson",
-          "Electrical Machinery and Electrics":"EME_export.geojson",
-          "Machines":"machine_export.geojson",
-          "Organic Chemicals":"organicChemicals_export.geojson",
-          "Chemical":"chemical_export.geojson",
-          "Halogenated Hydrocarbons":"HH_export.geojson",
-          "Metal":"metal_export_sample.geojson",
-          "Textiles":"textiles_export.geojson"
+    dic ={"Non-Fillet Frozen Fish":"frozenFish_export.geojson",
+          "Non-Fillet Fresh Fish":"freshFish_Export.geojson",
+          "Fish Fillets":"fishFillets_Export.geojson",
+          "Machinery Mechanical Appliances & Parts":"MMAP_Export.geojson",
+          "Electrical Machinery and Electrics":"EME_Export.geojson",
+          "Machines":"machine_Export.geojson",
+          "Organic Chemicals":"Organic_Chemicals_Export.geojson",
+          "Chemical":"Chemical_Export.geojson",
+          "Halogenated Hydrocarbons":"Halogenated_Hydrocarbons_Export.geojson",
+          "Metal":"Metal_export.geojson",
+          "Textiles":"Textiles_Export.geojson"
         };
     //create the map
     map = L.map('map').setView([30, 0], 2); // setView([lat, long], Zoom)
     //add OSM base tilelayer
-    L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png', {
-      maxZoom: 20,
-      attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'    
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
     getData();
 };
 
 function getData(){
-  fetch("data/Metal_export_sample.geojson")
+  fetch("data/Metal_export.geojson")
   .then(function(response){
     return response.json();
   })
   .then(function(json){
     var attributes = processData(json); //create an attributes array
     minValue = calcStats(json);
+    createInfoPanel();
     createPropSymbols(json, attributes);
     createLegend(attributes, "Metal");
     createSequenceControls(attributes);
@@ -78,6 +75,26 @@ function updateMap(file, mapName){
   })
 }
 
+function createInfoPanel(){  
+  var info = L.control();
+
+  info.onAdd = function (map) {
+      this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+      this.update();
+      return this._div;
+  };
+  
+  // method that we will use to update the control based on feature properties passed
+  info.update = function (props) {
+      this._div.innerHTML = '<h4>US Export Value</h4>' +  
+      (props ?
+          '<b>' + props.Name + '</b><br />' + props['2016'] + ' Million<sup>2</sup>'
+          : 'Select a symbol');
+  };
+  
+  info.addTo(map);
+}
+
 function deleteElement(){
   
   document.querySelector(".sidebar-legend").innerHTML = "";
@@ -90,14 +107,13 @@ function deleteElement(){
     symbol[0].remove();
  
   }
-
-}
+};
 
 function getName(data){
   properties2 = data.features[0].properties;
   
   return properties2["Name"]
-}
+};
 
 function processData(data){
   var attributes = [];    //empty array to hold attributes
@@ -165,6 +181,30 @@ function pointToLayer(feature, latlng, attributes){
 
   //create circle marker layer
   var layer = L.circleMarker(latlng, options);
+  // layer.on({
+  //   mouseover: function(e){
+  //     var layer = e.target;
+
+  //     layer.setStyle({
+  //         weight: 5,
+  //         color: '#666',
+  //         dashArray: '',
+  //         fillOpacity: 0.7
+  //     });
+    
+  //     layer.bringToFront(); 
+  //   },
+
+  //   mouseout: function(e){
+  //     geojson.resetStyle(e.target);
+  //   },
+
+  //   click: function(e){
+  //     map.fitBounds(e.target.getBounds());
+  //   }
+  // });
+
+
   //build popup content string
   var popupContent = createPopupContent(feature.properties, attribute)
 
@@ -253,13 +293,6 @@ function createSequenceControls(attributes, mapName){
   document.querySelector(".range-slider").min = 0;
   document.querySelector(".range-slider").value = 0;
   document.querySelector(".range-slider").step = 1;
-  // if (mapName){
-  //   // Update title attribute name
-  //   var titleAttr = document.querySelector('.titleAttr');
-  //   titleAttr.innerHTML = mapName;}
-  //   else{
-  //     //pass
-  //   }
 
   //Step 5: input listener for slider
   document.querySelector('.range-slider').addEventListener('input', function(){            
