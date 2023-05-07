@@ -89,8 +89,8 @@ function createInfoPanel(properties, attribute){
   
   //update the panel based on feature properties passed
   info.update = function (properties, attribute) {
-      this._div.innerHTML = '<h4>US Export Value</h4>' +  
-      (properties ?
+      this._div.innerHTML = '<h4>US Export Value</h4>' + 
+      (properties ? `<img src ="img/${properties.Name}.png"></img><br>`+
           '<b>' + properties.Name + '</b><br />' + Math.round(properties[attribute]/1000)*1000 + '(USD)'
           : 'Select a symbol');
   };
