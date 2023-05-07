@@ -84,6 +84,13 @@ function createInfoPanel(){
       return this._div;
   };
   
+  document.addEventListener('click', function(e){
+    // document.querySelector(e.target)
+    console.log(e)
+    console.log('good')
+  });
+
+  
   // method that we will use to update the control based on feature properties passed
   info.update = function (props) {
       this._div.innerHTML = '<h4>US Export Value</h4>' +  
@@ -230,7 +237,7 @@ function createLegend(attributes, mapName){
       var container = document.querySelector(".sidebar-legend");
 
       //PUT YOUR SCRIPT TO CREATE THE TEMPORAL LEGEND HERE
-      container.insertAdjacentHTML("beforeend",`<p class="temporalLegend">${mapName} in year <span class="year">2016</span> (USD)</p>`);
+      container.insertAdjacentHTML("beforeend",`<p class="temporalLegend">${mapName}</p>`);
       //Step 1: start attribute legend svg string
       var svg = '<svg id="attribute-legend" width="400px" height="120px">';
       //array of circle names to base loop on
@@ -307,7 +314,6 @@ function createPopupContent(properties, attribute){
   //add StationName and formatted attribute (ridership data) to popup content string
   var popupContent = "<p><b>Country name:</b> " + properties.Name + "</p>";
   var year = attribute;
-  popupContent += "<p><b>From:</b> the United States</p>";
   properties[attribute] == 0 ? popupContent += "0 Value":
   popupContent += "<p><b>Year: " + year + ":</b>" + properties[attribute] + "</p>";
   return popupContent;
@@ -316,7 +322,6 @@ function createPopupContent(properties, attribute){
 function updatePropSymbols(attribute){
   var year = attribute;
   //update temporal legend
-  document.querySelector("span.year").innerHTML = year;
   yearChange = document.querySelectorAll("span.slider-year")
   for (let i=0; i < yearChange.length; i++){
     yearChange[i].innerHTML = year;
