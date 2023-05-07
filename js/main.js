@@ -26,7 +26,7 @@ function createMap(){
       maxZoom: 19,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-
+    createInfoPanel();
     getData();
 };
 
@@ -38,7 +38,6 @@ function getData(){
   .then(function(json){
     var attributes = processData(json); //create an attributes array
     minValue = calcStats(json);
-    createInfoPanel();
     createPropSymbols(json, attributes);
     createLegend(attributes, "Metal");
     createSequenceControls(attributes);
@@ -75,8 +74,9 @@ function updateMap(file, mapName){
   })
 }
 
-function createInfoPanel(){  
-  var info = L.control();
+//create a info panel
+function createInfoPanel(properties, attribute){
+  info = L.control();
 
   info.onAdd = function (map) {
       this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
@@ -84,24 +84,18 @@ function createInfoPanel(){
       return this._div;
   };
   
-  document.addEventListener('click', function(e){
-    // document.querySelector(e.target)
-    console.log(e)
-    console.log('good')
-  });
-
-  
-  // method that we will use to update the control based on feature properties passed
-  info.update = function (props) {
+  //update the panel based on feature properties passed
+  info.update = function (properties, attribute) {
       this._div.innerHTML = '<h4>US Export Value</h4>' +  
-      (props ?
-          '<b>' + props.Name + '</b><br />' + props['2016'] + ' Million<sup>2</sup>'
+      (properties ?
+          '<b>' + properties.Name + '</b><br />' + Math.round(properties[attribute]/1000) + ' k (USD)'
           : 'Select a symbol');
   };
   
   info.addTo(map);
 }
 
+//delete DOM elements when refresh the web page
 function deleteElement(){
   
   document.querySelector(".sidebar-legend").innerHTML = "";
@@ -114,12 +108,6 @@ function deleteElement(){
     symbol[0].remove();
  
   }
-};
-
-function getName(data){
-  properties2 = data.features[0].properties;
-  
-  return properties2["Name"]
 };
 
 function processData(data){
@@ -185,40 +173,26 @@ function pointToLayer(feature, latlng, attributes){
 
   var attValue = Number(feature.properties[attribute]);   //For each feature, determine its value for the selected attribute
   options.radius = calcPropRadius(attValue);  //Give each feature's circle marker a radius based on its attribute value
-
+  
   //create circle marker layer
   var layer = L.circleMarker(latlng, options);
-  // layer.on({
-  //   mouseover: function(e){
-  //     var layer = e.target;
 
-  //     layer.setStyle({
-  //         weight: 5,
-  //         color: '#666',
-  //         dashArray: '',
-  //         fillOpacity: 0.7
-  //     });
-    
-  //     layer.bringToFront(); 
-  //   },
+  //pass the variables into the infopanel
+  layer.on({
+    mouseover:function(e){
+        info.update(feature.properties, attribute)
+    },
 
-  //   mouseout: function(e){
-  //     geojson.resetStyle(e.target);
-  //   },
+    mouseout: function(){
+        info.update()
+    }, 
 
-  //   click: function(e){
-  //     map.fitBounds(e.target.getBounds());
-  //   }
-  // });
+    click: function(e){
+        coord = e.latlng
+        map.setView([coord.lat, coord.lng], 5);
+    }
 
-
-  //build popup content string
-  var popupContent = createPopupContent(feature.properties, attribute)
-
-  //bind the popup to the circle marker
-  layer.bindPopup(popupContent, {
-      offset: new L.Point(0,-options.radius) 
-  });
+  })
   return layer;   //return the circle marker to the L.geoJson pointToLayer option
 };
 
@@ -273,27 +247,6 @@ function createSequenceControls(attributes, mapName){
   var container = document.querySelector(".sidebar-legend");
       container.insertAdjacentHTML('beforeend', '<p class="slider-label">Year: <span class="slider-year">2016</span></p>')
       container.insertAdjacentHTML('beforeend', '<input class="range-slider" type="range">')
-  
-  
-  /*var SequenceControl = L.Control.extend({
-      options: {
-          position: 'bottomleft'
-      },
-
-      onAdd: function () {
-          // create the control container div with a particular class name
-          var container = L.DomUtil.create('div', 'sequence-control-container');
-          //create range input element (slider)
-          container.insertAdjacentHTML('beforeend', '<p class="slider-label">Year: <span class="slider-year">2016</span></p>')
-          container.insertAdjacentHTML('beforeend', '<input class="range-slider" type="range">')
-          //disable any mouse event listeners for the container
-          L.DomEvent.disableClickPropagation(container);
-
-          return container;
-      }
-  });*/
-
-  //map.addControl(new SequenceControl());    // add listeners after adding control}
 
   //set slider attributes
   document.querySelector(".range-slider").max = 5;
@@ -310,7 +263,7 @@ function createSequenceControls(attributes, mapName){
   });
 };
 
-function createPopupContent(properties, attribute){
+function createPopupContent(properties, attribute){ 
   //add StationName and formatted attribute (ridership data) to popup content string
   var popupContent = "<p><b>Country name:</b> " + properties.Name + "</p>";
   var year = attribute;
@@ -322,26 +275,35 @@ function createPopupContent(properties, attribute){
 function updatePropSymbols(attribute){
   var year = attribute;
   //update temporal legend
+  console.log(year)
   yearChange = document.querySelectorAll("span.slider-year")
   for (let i=0; i < yearChange.length; i++){
     yearChange[i].innerHTML = year;
   }
-  
-
 
   map.eachLayer(function(layer){
       if (layer.feature && layer.feature.geometry.type == "Point"){
-          //update the layer style and popup
-          var props = layer.feature.properties;   //access feature properties
+        //update the layer style and popup
+        var props = layer.feature.properties;   //access feature properties
+        //update each feature's radius based on new attribute values
+        var radius = calcPropRadius(props[attribute]);
+        layer.setRadius(radius);
 
-          //update each feature's radius based on new attribute values
-          var radius = calcPropRadius(props[attribute]);
-          layer.setRadius(radius);
-          var popupContent = createPopupContent(props, attribute)
+        //update the new input for the infopanel
+        layer.on({
+          mouseover:function(e){
+              info.update(props, attribute)
+          },
 
-          //update popup content            
-          popup = layer.getPopup();            
-          popup.setContent(popupContent).update();
+          mouseout: function(e){
+              info.update()
+          }, 
+
+          click: function(e){
+              coord = e.latlng
+              map.setView([coord.lat, coord.lng], 5);
+          }
+        });
       }
   });
 };
@@ -383,7 +345,6 @@ function setdropdown(){
       });
     }
 }
-
 
 document.addEventListener('DOMContentLoaded',createMap)
 document.addEventListener('DOMContentLoaded',setdropdown)
