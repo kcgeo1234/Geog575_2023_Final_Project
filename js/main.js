@@ -22,9 +22,12 @@ function createMap(){
     //create the map
     map = L.map('map').setView([30, 0], 2); // setView([lat, long], Zoom)
     //add OSM base tilelayer
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', {
+      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      subdomains: 'abcd',
+      minZoom: 0,
+      maxZoom: 20,
+      ext: 'png'
     }).addTo(map);
     createInfoPanel();
     getData();
@@ -68,7 +71,7 @@ function updateMap(file, mapName){
     var attributes = processData(json); //create an attributes array
     minValue = calcStats(json);
     deleteElement()
-    createPropSymbols(json, attributes);
+    createPropSymbols(json, attributes, mapName);
     createLegend(attributes, mapName);
     createSequenceControls(attributes, mapName);
   })
@@ -88,7 +91,7 @@ function createInfoPanel(properties, attribute){
   info.update = function (properties, attribute) {
       this._div.innerHTML = '<h4>US Export Value</h4>' +  
       (properties ?
-          '<b>' + properties.Name + '</b><br />' + Math.round(properties[attribute]/1000) + ' k (USD)'
+          '<b>' + properties.Name + '</b><br />' + Math.round(properties[attribute]/1000)*1000 + '(USD)'
           : 'Select a symbol');
   };
   
@@ -150,29 +153,33 @@ function calcStats(data){
   return minValue;
 };
 
-function createPropSymbols(data, attributes){
+function createPropSymbols(data, attributes, mapName){
   //create a Leaflet GeoJSON layer and add it to the map
   L.geoJson(data, {
       pointToLayer: function(feature, latlng){
-          return pointToLayer(feature, latlng, attributes);
+          return pointToLayer(feature, latlng, attributes, mapName);
       }
   }).addTo(map);
 };
 
-function pointToLayer(feature, latlng, attributes){
+function pointToLayer(feature, latlng, attributes, mapName){
   //Determine which attribute to visualize with proportional symbols
   var attribute = attributes[0];
   //create marker options
   var options = {
-      fillColor: "#ff7800",
+      fillColor: "#D1AB41",
       color: "#000",
       weight: 1,
-      opacity: 1,
-      fillOpacity: 0.8
+      opacity: 0.8,
+      fillOpacity: 0.6
   };
 
   var attValue = Number(feature.properties[attribute]);   //For each feature, determine its value for the selected attribute
-  options.radius = calcPropRadius(attValue);  //Give each feature's circle marker a radius based on its attribute value
+  if (mapName === 'Non-Fillet Fresh Fish' || mapName ==='Electrical Machinery and Electrics'){
+    options.radius = calcPropRadius2(attValue);
+    } else{      
+      options.radius = calcPropRadius1(attValue);
+    }  //Give each feature's circle marker a radius based on its attribute value
   
   //create circle marker layer
   var layer = L.circleMarker(latlng, options);
@@ -197,7 +204,17 @@ function pointToLayer(feature, latlng, attributes){
 };
 
 //calculate the radius of each proportional symbol
-function calcPropRadius(attValue) {
+function calcPropRadius2(attValue) {
+  //constant factor adjusts symbol sizes evenly
+  var minRadius = 1;
+  //Flannery Apperance Compensation formula
+  var radius = 1.0083 * Math.pow(attValue/minValue,0.5715) * minRadius
+  return radius;
+};
+
+
+//calculate the radius of each proportional symbol
+function calcPropRadius1(attValue) {
   //constant factor adjusts symbol sizes evenly
   var minRadius = 3;
   //Flannery Apperance Compensation formula
@@ -206,7 +223,6 @@ function calcPropRadius(attValue) {
 };
 
 function createLegend(attributes, mapName){
-
     // create the control container with a particular class name
       var container = document.querySelector(".sidebar-legend");
 
@@ -219,19 +235,30 @@ function createLegend(attributes, mapName){
 
       //Step 2: loop to add each circle and text to svg string
       for (var i=0; i<circles.length; i++){
-          
-          //Step 3: assign the r and cy attributes  
-          var radius = calcPropRadius(dataStats[circles[i]]);  
+        if (mapName === 'Non-Fillet Fresh Fish' || mapName ==='Electrical Machinery and Electrics'){
+          var radius = calcPropRadius2(dataStats[circles[i]]);  
           var cy = 80 - radius;  
           //circle string
           svg += '<circle class="legend-circle" id="' + 
-          circles[i] + '" r="' + radius + '"cy="' + cy + '" fill="#F47821" fill-opacity="0.8" stroke="#000000" cx="210"/>'; 
+          circles[i] + '" r="' + radius + '"cy="' + cy + '" fill="#D1AB41" fill-opacity="0.8" stroke="#000000" cx="210"/>'; 
           
           //evenly space out labels            
           var textY = i * 20 + 35;            
           //text string            
           svg += '<text id="' + circles[i] + '-text" x="250" y="' + textY + '">' + Math.round(dataStats[circles[i]]/1000000)+ ' Million</text>';
-
+        } else{
+          //Step 3: assign the r and cy attributes  
+          var radius = calcPropRadius1(dataStats[circles[i]]);  
+          var cy = 80 - radius;  
+          //circle string
+          svg += '<circle class="legend-circle" id="' + 
+          circles[i] + '" r="' + radius + '"cy="' + cy + '" fill="#D1AB41" fill-opacity="0.8" stroke="#000000" cx="210"/>'; 
+          
+          //evenly space out labels            
+          var textY = i * 20 + 35;            
+          //text string            
+          svg += '<text id="' + circles[i] + '-text" x="250" y="' + textY + '">' + Math.round(dataStats[circles[i]]/1000000)+ ' Million</text>';
+        }
       };
       //close svg string
       svg += "</svg>";
@@ -259,7 +286,7 @@ function createSequenceControls(attributes, mapName){
       //Step 6: get the new index value
       var index = this.value;
       //Step 9: pass new attribute to update symbols
-      updatePropSymbols(attributes[index]);
+      updatePropSymbols(attributes[index], mapName);
   });
 };
 
@@ -272,7 +299,7 @@ function createPopupContent(properties, attribute){
   return popupContent;
 };
 
-function updatePropSymbols(attribute){
+function updatePropSymbols(attribute, mapName){
   var year = attribute;
   //update temporal legend
   console.log(year)
@@ -286,7 +313,10 @@ function updatePropSymbols(attribute){
         //update the layer style and popup
         var props = layer.feature.properties;   //access feature properties
         //update each feature's radius based on new attribute values
-        var radius = calcPropRadius(props[attribute]);
+        if (mapName === 'Non-Fillet Fresh Fish' || mapName ==='Electrical Machinery and Electrics'){
+          var radius = calcPropRadius2(props[attribute]);
+        } else{
+        var radius = calcPropRadius1(props[attribute]);}
         layer.setRadius(radius);
 
         //update the new input for the infopanel
@@ -308,7 +338,7 @@ function updatePropSymbols(attribute){
   });
 };
 
-
+ 
 
 function setdropdown(){
     var dropdown = document.getElementsByClassName("dropdown-btn");
