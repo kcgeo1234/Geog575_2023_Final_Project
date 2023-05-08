@@ -1,0 +1,207 @@
+"Year","Continent ID","Continent","Country ID","Country","Trade Value"
+2020,"af","Africa","afago","Angola",11468023
+2020,"af","Africa","afbdi","Burundi",671213
+2020,"af","Africa","afben","Benin",937109
+2020,"af","Africa","afbfa","Burkina Faso",14410223
+2020,"af","Africa","afbwa","Botswana",290509
+2020,"af","Africa","afcaf","Central African Republic",339205
+2020,"af","Africa","afciv","Cote d'Ivoire",1894565
+2020,"af","Africa","afcmr","Cameroon",771828
+2020,"af","Africa","afcod","Democratic Republic of the Congo",9420432.000000002
+2020,"af","Africa","afcog","Republic of the Congo",670382
+2020,"af","Africa","afcpv","Cape Verde",316352
+2020,"af","Africa","afdji","Djibouti",1231019
+2020,"af","Africa","afdza","Algeria",805805
+2020,"af","Africa","afegy","Egypt",72750266
+2020,"af","Africa","aferi","Eritrea",153984
+2020,"af","Africa","afeth","Ethiopia",4912202
+2020,"af","Africa","afgab","Gabon",532644
+2020,"af","Africa","afgha","Ghana",11736224
+2020,"af","Africa","afgin","Guinea",3379858
+2020,"af","Africa","afgmb","Gambia",823259
+2020,"af","Africa","afgnq","Equatorial Guinea",1462727
+2020,"af","Africa","afken","Kenya",11646346
+2020,"af","Africa","aflbr","Liberia",8534822
+2020,"af","Africa","aflby","Libya",1144889
+2020,"af","Africa","aflso","Lesotho",642664
+2020,"af","Africa","afmar","Morocco",39348878
+2020,"af","Africa","afmdg","Madagascar",1816145
+2020,"af","Africa","afmli","Mali",853246
+2020,"af","Africa","afmoz","Mozambique",2105407
+2020,"af","Africa","afmrt","Mauritania",4179086
+2020,"af","Africa","afmus","Mauritius",669602
+2020,"af","Africa","afmwi","Malawi",2606619
+2020,"af","Africa","afnam","Namibia",377593
+2020,"af","Africa","afner","Niger",2354198
+2020,"af","Africa","afnga","Nigeria",50881719
+2020,"af","Africa","afrwa","Rwanda",863890
+2020,"af","Africa","afsdn","Sudan",60086
+2020,"af","Africa","afsen","Senegal",9109314
+2020,"af","Africa","afshn","Saint Helena",8341.000000000002
+2020,"af","Africa","afsle","Sierra Leone",2011406.9999999998
+2020,"af","Africa","afsom","Somalia",996724
+2020,"af","Africa","afssd","South Sudan",288684
+2020,"af","Africa","afstp","Sao Tome and Principe",19500
+2020,"af","Africa","afswz","Eswatini",182246
+2020,"af","Africa","afsyc","Seychelles",204273
+2020,"af","Africa","aftcd","Chad",261649
+2020,"af","Africa","aftgo","Togo",1259865
+2020,"af","Africa","aftun","Tunisia",15943608
+2020,"af","Africa","aftza","Tanzania",7215477
+2020,"af","Africa","afuga","Uganda",2810470
+2020,"af","Africa","afzaf","South Africa",35759970
+2020,"af","Africa","afzmb","Zambia",1370580
+2020,"af","Africa","afzwe","Zimbabwe",747164
+2020,"as","Asia","asafg","Afghanistan",3779831
+2020,"as","Asia","asare","United Arab Emirates",150819402
+2020,"as","Asia","asarm","Armenia",3205242
+2020,"as","Asia","asaze","Azerbaijan",2643200
+2020,"as","Asia","asbgd","Bangladesh",338429910
+2020,"as","Asia","asbhr","Bahrain",12049352
+2020,"as","Asia","asbrn","Brunei",1945795
+2020,"as","Asia","asbtn","Bhutan",2535
+2020,"as","Asia","aschn","China",2427644485
+2020,"as","Asia","ascxr","Christmas Island",462740
+2020,"as","Asia","ascyp","Cyprus",889109
+2020,"as","Asia","asgeo","Georgia",3968519
+2020,"as","Asia","ashkg","Hong Kong",184532712
+2020,"as","Asia","asidn","Indonesia",369121433
+2020,"as","Asia","asind","India",299762538
+2020,"as","Asia","asiot","British Indian Ocean Territory",707231
+2020,"as","Asia","asirq","Iraq",3706126
+2020,"as","Asia","asisr","Israel",108259517
+2020,"as","Asia","asjor","Jordan",9089062
+2020,"as","Asia","asjpn","Japan",393753396
+2020,"as","Asia","askaz","Kazakhstan",2475156
+2020,"as","Asia","askgz","Kyrgyzstan",66524
+2020,"as","Asia","askhm","Cambodia",17307556
+2020,"as","Asia","askor","South Korea",354385511
+2020,"as","Asia","askwt","Kuwait",23649350
+2020,"as","Asia","aslao","Laos",1431244
+2020,"as","Asia","aslbn","Lebanon",5170138
+2020,"as","Asia","aslka","Sri Lanka",48223815
+2020,"as","Asia","asmac","Macau",7564289
+2020,"as","Asia","asmdv","Maldives",392676
+2020,"as","Asia","asmmr","Burma",21308460
+2020,"as","Asia","asmng","Mongolia",2699831
+2020,"as","Asia","asmys","Malaysia",130745599
+2020,"as","Asia","asnpl","Nepal",1404015
+2020,"as","Asia","asomn","Oman",6093822
+2020,"as","Asia","aspak","Pakistan",773440890
+2020,"as","Asia","asphl","Philippines",42467342
+2020,"as","Asia","aspse","Palestine",287665
+2020,"as","Asia","asqat","Qatar",21157335
+2020,"as","Asia","assau","Saudi Arabia",75023995
+2020,"as","Asia","assgp","Singapore",93520046
+2020,"as","Asia","assyr","Syria",29129.000000000007
+2020,"as","Asia","astha","Thailand",218933293
+2020,"as","Asia","astjk","Tajikistan",78127
+2020,"as","Asia","astkm","Turkmenistan",48150
+2020,"as","Asia","astls","Timor-Leste",250000
+2020,"as","Asia","astur","Turkey",609563666
+2020,"as","Asia","asuzb","Uzbekistan",4795810
+2020,"as","Asia","asvnm","Vietnam",1316591309
+2020,"as","Asia","asxxb","Chinese Taipei",136417118
+2020,"as","Asia","asyem","Yemen",3536707
+2020,"eu","Europe","eualb","Albania",500632
+2020,"eu","Europe","euand","Andorra",14436
+2020,"eu","Europe","euaut","Austria",29773750
+2020,"eu","Europe","eubel","Belgium",225422495
+2020,"eu","Europe","eubgr","Bulgaria",6200186
+2020,"eu","Europe","eubih","Bosnia and Herzegovina",4521623
+2020,"eu","Europe","eublr","Belarus",18893274
+2020,"eu","Europe","euche","Switzerland",74167969
+2020,"eu","Europe","eucze","Czechia",32236664
+2020,"eu","Europe","eudeu","Germany",319554664
+2020,"eu","Europe","eudnk","Denmark",18608855
+2020,"eu","Europe","euesp","Spain",50884195
+2020,"eu","Europe","euest","Estonia",3312148
+2020,"eu","Europe","eufin","Finland",11214430
+2020,"eu","Europe","eufra","France",134867241
+2020,"eu","Europe","eugbr","United Kingdom",406734815
+2020,"eu","Europe","eugib","Gibraltar",22961
+2020,"eu","Europe","eugrc","Greece",8327053
+2020,"eu","Europe","euhrv","Croatia",1592648
+2020,"eu","Europe","euhun","Hungary",13279059
+2020,"eu","Europe","euirl","Ireland",55868800
+2020,"eu","Europe","euisl","Iceland",5145418
+2020,"eu","Europe","euita","Italy",144505031
+2020,"eu","Europe","eultu","Lithuania",5158273
+2020,"eu","Europe","eulux","Luxembourg",15173683
+2020,"eu","Europe","eulva","Latvia",8742993
+2020,"eu","Europe","eumda","Moldova",2592081
+2020,"eu","Europe","eumkd","North Macedonia",2433907
+2020,"eu","Europe","eumlt","Malta",1776890
+2020,"eu","Europe","eumne","Montenegro",513491
+2020,"eu","Europe","eunld","Netherlands",380731223
+2020,"eu","Europe","eunor","Norway",20179288
+2020,"eu","Europe","eupol","Poland",69938450
+2020,"eu","Europe","euprt","Portugal",11956798
+2020,"eu","Europe","eurou","Romania",8624412
+2020,"eu","Europe","eurus","Russia",48247100
+2020,"eu","Europe","eusmr","San Marino",4318.000000000001
+2020,"eu","Europe","eusrb","Serbia",3155872
+2020,"eu","Europe","eusvk","Slovakia",5346626
+2020,"eu","Europe","eusvn","Slovenia",9974984
+2020,"eu","Europe","euswe","Sweden",30879045
+2020,"eu","Europe","euukr","Ukraine",44882604
+2020,"na","North America","naabw","Aruba",12522984
+2020,"na","North America","naaia","Anguilla",380347
+2020,"na","North America","naatg","Antigua and Barbuda",4092637
+2020,"na","North America","nabhs","Bahamas",25322324
+2020,"na","North America","nablz","Belize",6347449
+2020,"na","North America","nabmu","Bermuda",14454607
+2020,"na","North America","nabrb","Barbados",12364906
+2020,"na","North America","nacan","Canada",3430504595
+2020,"na","North America","nacri","Costa Rica",115334380
+2020,"na","North America","nacub","Cuba",202409
+2020,"na","North America","nacuw","Curaçao",2115537
+2020,"na","North America","nacym","Cayman Islands",17899040
+2020,"na","North America","nadma","Dominica",1951004
+2020,"na","North America","nadom","Dominican Republic",522986297
+2020,"na","North America","nagrd","Grenada",4911174
+2020,"na","North America","nagrl","Greenland",40890
+2020,"na","North America","nagtm","Guatemala",383370291
+2020,"na","North America","nahnd","Honduras",1011676727
+2020,"na","North America","nahti","Haiti",31845862
+2020,"na","North America","najam","Jamaica",28480679
+2020,"na","North America","nakna","Saint Kitts and Nevis",1585324
+2020,"na","North America","nalca","Saint Lucia",4128754
+2020,"na","North America","namaf","Saint Martin",4357299
+2020,"na","North America","namex","Mexico",4196710698
+2020,"na","North America","namsr","Montserrat",483283
+2020,"na","North America","nanic","Nicaragua",282382927
+2020,"na","North America","napan","Panama",42335338
+2020,"na","North America","naslv","El Salvador",367838715
+2020,"na","North America","natca","Turks and Caicos Islands",1771048
+2020,"na","North America","natto","Trinidad and Tobago",27076476
+2020,"na","North America","navct","Saint Vincent and the Grenadines",3721514
+2020,"na","North America","navgb","British Virgin Islands",2786169
+2020,"oc","Oceania","ocaus","Australia",218334298
+2020,"oc","Oceania","occok","Cook Islands",48556
+2020,"oc","Oceania","ocfji","Fiji",1094871
+2020,"oc","Oceania","ocfsm","Micronesia",323011
+2020,"oc","Oceania","ockir","Kiribati",27999
+2020,"oc","Oceania","ocmhl","Marshall Islands",363713
+2020,"oc","Oceania","ocncl","New Caledonia",983885
+2020,"oc","Oceania","ocniu","Niue",8600
+2020,"oc","Oceania","ocnzl","New Zealand",45856958
+2020,"oc","Oceania","ocplw","Palau",39562
+2020,"oc","Oceania","ocpng","Papua New Guinea",745336
+2020,"oc","Oceania","ocpyf","French Polynesia",5961695
+2020,"oc","Oceania","ocslb","Solomon Islands",74706
+2020,"oc","Oceania","octon","Tonga",75988
+2020,"oc","Oceania","ocvut","Vanuatu",42132.00000000001
+2020,"oc","Oceania","ocwsm","Samoa",109120
+2020,"sa","South America","saarg","Argentina",29939078
+2020,"sa","South America","sabol","Bolivia",4501791
+2020,"sa","South America","sabra","Brazil",145985670
+2020,"sa","South America","sachl","Chile",125061023
+2020,"sa","South America","sacol","Colombia",99981780
+2020,"sa","South America","saecu","Ecuador",32477749
+2020,"sa","South America","saguy","Guyana",5943531
+2020,"sa","South America","saper","Peru",112794301
+2020,"sa","South America","sapry","Paraguay",15223137
+2020,"sa","South America","sasur","Suriname",3297207
+2020,"sa","South America","saury","Uruguay",6074036
+2020,"sa","South America","saven","Venezuela",17003161

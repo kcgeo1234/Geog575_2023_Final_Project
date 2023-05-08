@@ -1,0 +1,207 @@
+"Year","Continent ID","Continent","Country ID","Country","Trade Value"
+2019,"af","Africa","afago","Angola",10558987
+2019,"af","Africa","afbdi","Burundi",622551
+2019,"af","Africa","afben","Benin",3003567
+2019,"af","Africa","afbfa","Burkina Faso",2690922
+2019,"af","Africa","afbwa","Botswana",262908
+2019,"af","Africa","afcaf","Central African Republic",221133
+2019,"af","Africa","afciv","Cote d'Ivoire",2140160
+2019,"af","Africa","afcmr","Cameroon",1553561
+2019,"af","Africa","afcod","Democratic Republic of the Congo",11891542
+2019,"af","Africa","afcog","Republic of the Congo",1578367
+2019,"af","Africa","afcom","Comoros",10000
+2019,"af","Africa","afcpv","Cape Verde",619573
+2019,"af","Africa","afdji","Djibouti",299693
+2019,"af","Africa","afdza","Algeria",4613954
+2019,"af","Africa","afegy","Egypt",67611731
+2019,"af","Africa","aferi","Eritrea",55112
+2019,"af","Africa","afeth","Ethiopia",3858459
+2019,"af","Africa","afgab","Gabon",745970
+2019,"af","Africa","afgha","Ghana",7235460
+2019,"af","Africa","afgin","Guinea",4202597
+2019,"af","Africa","afgmb","Gambia",959689
+2019,"af","Africa","afgnq","Equatorial Guinea",1953714
+2019,"af","Africa","afken","Kenya",12988341
+2019,"af","Africa","aflbr","Liberia",9964944
+2019,"af","Africa","aflby","Libya",557636
+2019,"af","Africa","aflso","Lesotho",89166
+2019,"af","Africa","afmar","Morocco",88068527
+2019,"af","Africa","afmdg","Madagascar",2540521
+2019,"af","Africa","afmli","Mali",1773361
+2019,"af","Africa","afmoz","Mozambique",5252526
+2019,"af","Africa","afmrt","Mauritania",4160645
+2019,"af","Africa","afmus","Mauritius",958681
+2019,"af","Africa","afmwi","Malawi",1535478
+2019,"af","Africa","afnam","Namibia",194832
+2019,"af","Africa","afner","Niger",2687822
+2019,"af","Africa","afnga","Nigeria",44186983
+2019,"af","Africa","afrwa","Rwanda",290259
+2019,"af","Africa","afsdn","Sudan",57010
+2019,"af","Africa","afsen","Senegal",9366045
+2019,"af","Africa","afsle","Sierra Leone",3935868
+2019,"af","Africa","afsom","Somalia",780813
+2019,"af","Africa","afssd","South Sudan",186942
+2019,"af","Africa","afstp","Sao Tome and Principe",55549
+2019,"af","Africa","afswz","Eswatini",146855
+2019,"af","Africa","afsyc","Seychelles",391461
+2019,"af","Africa","aftcd","Chad",26501
+2019,"af","Africa","aftgo","Togo",1583272
+2019,"af","Africa","aftun","Tunisia",15695361
+2019,"af","Africa","aftza","Tanzania",6551813
+2019,"af","Africa","afuga","Uganda",2988381
+2019,"af","Africa","afzaf","South Africa",44814617
+2019,"af","Africa","afzmb","Zambia",2241998
+2019,"af","Africa","afzwe","Zimbabwe",860429
+2019,"as","Asia","asafg","Afghanistan",5973056
+2019,"as","Asia","asare","United Arab Emirates",163421392
+2019,"as","Asia","asarm","Armenia",17522409
+2019,"as","Asia","asaze","Azerbaijan",1716542
+2019,"as","Asia","asbgd","Bangladesh",397494762.99999994
+2019,"as","Asia","asbhr","Bahrain",13696034
+2019,"as","Asia","asbrn","Brunei",2246233
+2019,"as","Asia","asbtn","Bhutan",12867
+2019,"as","Asia","aschn","China",1340325416
+2019,"as","Asia","ascxr","Christmas Island",5010
+2019,"as","Asia","ascyp","Cyprus",917135
+2019,"as","Asia","asgeo","Georgia",3707052
+2019,"as","Asia","ashkg","Hong Kong",239506838
+2019,"as","Asia","asidn","Indonesia",541159871
+2019,"as","Asia","asind","India",774929572
+2019,"as","Asia","asiot","British Indian Ocean Territory",747444.9999999999
+2019,"as","Asia","asirn","Iran",75114
+2019,"as","Asia","asirq","Iraq",6168982
+2019,"as","Asia","asisr","Israel",87418500
+2019,"as","Asia","asjor","Jordan",10019994
+2019,"as","Asia","asjpn","Japan",470665798
+2019,"as","Asia","askaz","Kazakhstan",3878439
+2019,"as","Asia","askgz","Kyrgyzstan",221516
+2019,"as","Asia","askhm","Cambodia",9562460
+2019,"as","Asia","askor","South Korea",445378509
+2019,"as","Asia","askwt","Kuwait",27204951
+2019,"as","Asia","aslao","Laos",801853
+2019,"as","Asia","aslbn","Lebanon",18669528
+2019,"as","Asia","aslka","Sri Lanka",54809887
+2019,"as","Asia","asmac","Macau",6567624
+2019,"as","Asia","asmdv","Maldives",1917782
+2019,"as","Asia","asmmr","Burma",8675530
+2019,"as","Asia","asmng","Mongolia",1751148
+2019,"as","Asia","asmys","Malaysia",178854934
+2019,"as","Asia","asnpl","Nepal",2170622
+2019,"as","Asia","asomn","Oman",6828229
+2019,"as","Asia","aspak","Pakistan",610915934
+2019,"as","Asia","asphl","Philippines",74081870
+2019,"as","Asia","aspse","Palestine",280763
+2019,"as","Asia","asqat","Qatar",26492451
+2019,"as","Asia","assau","Saudi Arabia",80843496
+2019,"as","Asia","assgp","Singapore",97812448
+2019,"as","Asia","assyr","Syria",32112
+2019,"as","Asia","astha","Thailand",319673598
+2019,"as","Asia","astjk","Tajikistan",391564
+2019,"as","Asia","astkm","Turkmenistan",122120
+2019,"as","Asia","astur","Turkey",684378269
+2019,"as","Asia","asuzb","Uzbekistan",2940324
+2019,"as","Asia","asvnm","Vietnam",1648012039
+2019,"as","Asia","asxxb","Chinese Taipei",215976432
+2019,"as","Asia","asyem","Yemen",1461498.0000000002
+2019,"eu","Europe","eualb","Albania",974391
+2019,"eu","Europe","euand","Andorra",132494
+2019,"eu","Europe","euaut","Austria",24428099
+2019,"eu","Europe","eubel","Belgium",274603161
+2019,"eu","Europe","eubgr","Bulgaria",7739331
+2019,"eu","Europe","eubih","Bosnia and Herzegovina",3915357
+2019,"eu","Europe","eublr","Belarus",13361039
+2019,"eu","Europe","euche","Switzerland",75748973
+2019,"eu","Europe","eucze","Czechia",31144437
+2019,"eu","Europe","eudeu","Germany",383900951
+2019,"eu","Europe","eudnk","Denmark",20661068
+2019,"eu","Europe","euesp","Spain",59951361
+2019,"eu","Europe","euest","Estonia",2189210
+2019,"eu","Europe","eufin","Finland",14735003
+2019,"eu","Europe","eufra","France",163507119
+2019,"eu","Europe","eugbr","United Kingdom",522097949
+2019,"eu","Europe","eugib","Gibraltar",24375
+2019,"eu","Europe","eugrc","Greece",7486242
+2019,"eu","Europe","euhrv","Croatia",1210918
+2019,"eu","Europe","euhun","Hungary",15452304
+2019,"eu","Europe","euirl","Ireland",65567069
+2019,"eu","Europe","euisl","Iceland",5283240
+2019,"eu","Europe","euita","Italy",157454283
+2019,"eu","Europe","eultu","Lithuania",4794592
+2019,"eu","Europe","eulux","Luxembourg",9801183
+2019,"eu","Europe","eulva","Latvia",9601088
+2019,"eu","Europe","eumda","Moldova",2680786
+2019,"eu","Europe","eumkd","North Macedonia",2743322
+2019,"eu","Europe","eumlt","Malta",2130104
+2019,"eu","Europe","eumne","Montenegro",727371
+2019,"eu","Europe","eunld","Netherlands",371137538
+2019,"eu","Europe","eunor","Norway",18493873
+2019,"eu","Europe","eupol","Poland",48518463
+2019,"eu","Europe","euprt","Portugal",15401431
+2019,"eu","Europe","eurou","Romania",7245821
+2019,"eu","Europe","eurus","Russia",59585097
+2019,"eu","Europe","eusmr","San Marino",69071
+2019,"eu","Europe","eusrb","Serbia",5908423
+2019,"eu","Europe","eusvk","Slovakia",5394994
+2019,"eu","Europe","eusvn","Slovenia",12469972
+2019,"eu","Europe","euswe","Sweden",30918376
+2019,"eu","Europe","euukr","Ukraine",63921666
+2019,"na","North America","naabw","Aruba",17890731
+2019,"na","North America","naaia","Anguilla",1124454
+2019,"na","North America","naatg","Antigua and Barbuda",10253964
+2019,"na","North America","nabhs","Bahamas",36037126
+2019,"na","North America","nablz","Belize",8214951
+2019,"na","North America","nabmu","Bermuda",15870868
+2019,"na","North America","nabrb","Barbados",12004039
+2019,"na","North America","nacan","Canada",3588062868
+2019,"na","North America","nacri","Costa Rica",162896192
+2019,"na","North America","nacub","Cuba",474764
+2019,"na","North America","nacuw","Curaçao",3409703
+2019,"na","North America","nacym","Cayman Islands",12153803
+2019,"na","North America","nadma","Dominica",1251565
+2019,"na","North America","nadom","Dominican Republic",788604735
+2019,"na","North America","nagrd","Grenada",6108196
+2019,"na","North America","nagrl","Greenland",37277
+2019,"na","North America","nagtm","Guatemala",419546036
+2019,"na","North America","nahnd","Honduras",1583783869
+2019,"na","North America","nahti","Haiti",87328513
+2019,"na","North America","najam","Jamaica",36603986
+2019,"na","North America","nakna","Saint Kitts and Nevis",1758693
+2019,"na","North America","nalca","Saint Lucia",6527329
+2019,"na","North America","namaf","Saint Martin",7746294
+2019,"na","North America","namex","Mexico",4969451271
+2019,"na","North America","namsr","Montserrat",471871
+2019,"na","North America","nanic","Nicaragua",407451776
+2019,"na","North America","napan","Panama",82152207
+2019,"na","North America","naslv","El Salvador",491939483
+2019,"na","North America","natca","Turks and Caicos Islands",4445004
+2019,"na","North America","natto","Trinidad and Tobago",31571157
+2019,"na","North America","navct","Saint Vincent and the Grenadines",4170364
+2019,"na","North America","navgb","British Virgin Islands",3965528
+2019,"oc","Oceania","ocaus","Australia",229598004
+2019,"oc","Oceania","occok","Cook Islands",93261
+2019,"oc","Oceania","ocfji","Fiji",2583002
+2019,"oc","Oceania","ocfsm","Micronesia",275570
+2019,"oc","Oceania","ockir","Kiribati",26260
+2019,"oc","Oceania","ocmhl","Marshall Islands",276212
+2019,"oc","Oceania","ocncl","New Caledonia",517144
+2019,"oc","Oceania","ocnru","Nauru",2647
+2019,"oc","Oceania","ocnzl","New Zealand",58112279
+2019,"oc","Oceania","ocplw","Palau",39927
+2019,"oc","Oceania","ocpng","Papua New Guinea",1177887
+2019,"oc","Oceania","ocpyf","French Polynesia",7971597
+2019,"oc","Oceania","ocslb","Solomon Islands",43060
+2019,"oc","Oceania","octon","Tonga",120240
+2019,"oc","Oceania","ocvut","Vanuatu",48560
+2019,"oc","Oceania","ocwsm","Samoa",517447
+2019,"sa","South America","saarg","Argentina",29595707
+2019,"sa","South America","sabol","Bolivia",7216280
+2019,"sa","South America","sabra","Brazil",154658713
+2019,"sa","South America","sachl","Chile",162515400
+2019,"sa","South America","sacol","Colombia",145764630
+2019,"sa","South America","saecu","Ecuador",44254246
+2019,"sa","South America","saguy","Guyana",9958356
+2019,"sa","South America","saper","Peru",154777805
+2019,"sa","South America","sapry","Paraguay",19424226
+2019,"sa","South America","sasur","Suriname",4498228
+2019,"sa","South America","saury","Uruguay",7757644
+2019,"sa","South America","saven","Venezuela",16050055

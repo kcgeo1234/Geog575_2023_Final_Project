@@ -1,0 +1,210 @@
+"Year","Continent ID","Continent","Country ID","Country","Trade Value"
+2016,"af","Africa","afago","Angola",13365449
+2016,"af","Africa","afbdi","Burundi",943009.0000000001
+2016,"af","Africa","afben","Benin",7570919
+2016,"af","Africa","afbfa","Burkina Faso",2049913
+2016,"af","Africa","afbwa","Botswana",412205
+2016,"af","Africa","afcaf","Central African Republic",101408
+2016,"af","Africa","afciv","Cote d'Ivoire",4186346
+2016,"af","Africa","afcmr","Cameroon",1922511.9999999998
+2016,"af","Africa","afcod","Democratic Republic of the Congo",10469806
+2016,"af","Africa","afcog","Republic of the Congo",3504383
+2016,"af","Africa","afcom","Comoros",157201
+2016,"af","Africa","afcpv","Cape Verde",431791.99999999994
+2016,"af","Africa","afdji","Djibouti",346583
+2016,"af","Africa","afdza","Algeria",3322919
+2016,"af","Africa","afegy","Egypt",78334074
+2016,"af","Africa","aferi","Eritrea",23850
+2016,"af","Africa","afeth","Ethiopia",7823708
+2016,"af","Africa","afgab","Gabon",2022695
+2016,"af","Africa","afgha","Ghana",9719058
+2016,"af","Africa","afgin","Guinea",4752191
+2016,"af","Africa","afgmb","Gambia",581730
+2016,"af","Africa","afgnb","Guinea-Bissau",48448
+2016,"af","Africa","afgnq","Equatorial Guinea",1453442
+2016,"af","Africa","afken","Kenya",13546887
+2016,"af","Africa","aflbr","Liberia",12719298.000000002
+2016,"af","Africa","aflby","Libya",603029
+2016,"af","Africa","aflso","Lesotho",1125636
+2016,"af","Africa","afmar","Morocco",81867489
+2016,"af","Africa","afmdg","Madagascar",6811615
+2016,"af","Africa","afmli","Mali",4238408
+2016,"af","Africa","afmoz","Mozambique",4108591.0000000005
+2016,"af","Africa","afmrt","Mauritania",5038412
+2016,"af","Africa","afmus","Mauritius",743693
+2016,"af","Africa","afmwi","Malawi",1248259
+2016,"af","Africa","afnam","Namibia",405742
+2016,"af","Africa","afner","Niger",2340709
+2016,"af","Africa","afnga","Nigeria",37445339
+2016,"af","Africa","afrwa","Rwanda",1293048
+2016,"af","Africa","afsdn","Sudan",36827
+2016,"af","Africa","afsen","Senegal",13594523
+2016,"af","Africa","afsle","Sierra Leone",5098133
+2016,"af","Africa","afsom","Somalia",943008
+2016,"af","Africa","afssd","South Sudan",329346
+2016,"af","Africa","afstp","Sao Tome and Principe",32874
+2016,"af","Africa","afswz","Eswatini",158585
+2016,"af","Africa","afsyc","Seychelles",382046
+2016,"af","Africa","aftcd","Chad",504347
+2016,"af","Africa","aftgo","Togo",2752285
+2016,"af","Africa","aftun","Tunisia",19671256
+2016,"af","Africa","aftza","Tanzania",14171783
+2016,"af","Africa","afuga","Uganda",2582666
+2016,"af","Africa","afzaf","South Africa",37142012
+2016,"af","Africa","afzmb","Zambia",1375203
+2016,"af","Africa","afzwe","Zimbabwe",468185
+2016,"an","Antarctica","anatf","French South Antarctic Territory",8036
+2016,"as","Asia","asafg","Afghanistan",3831775
+2016,"as","Asia","asare","United Arab Emirates",212383881
+2016,"as","Asia","asarm","Armenia",5002170
+2016,"as","Asia","asaze","Azerbaijan",2103013
+2016,"as","Asia","asbgd","Bangladesh",107184458
+2016,"as","Asia","asbhr","Bahrain",18131671
+2016,"as","Asia","asbrn","Brunei",1656942
+2016,"as","Asia","asbtn","Bhutan",14984
+2016,"as","Asia","ascck","Cocos (Keeling) Islands",50000
+2016,"as","Asia","aschn","China",1387987533
+2016,"as","Asia","ascyp","Cyprus",1119141
+2016,"as","Asia","asgeo","Georgia",3103502
+2016,"as","Asia","ashkg","Hong Kong",246727373
+2016,"as","Asia","asidn","Indonesia",434496808
+2016,"as","Asia","asind","India",435143631
+2016,"as","Asia","asiot","British Indian Ocean Territory",139903
+2016,"as","Asia","asirn","Iran",645083
+2016,"as","Asia","asirq","Iraq",5887827
+2016,"as","Asia","asisr","Israel",92597399
+2016,"as","Asia","asjor","Jordan",21390669
+2016,"as","Asia","asjpn","Japan",464857694
+2016,"as","Asia","askaz","Kazakhstan",4639806
+2016,"as","Asia","askgz","Kyrgyzstan",218455
+2016,"as","Asia","askhm","Cambodia",14060518
+2016,"as","Asia","askor","South Korea",439094711
+2016,"as","Asia","askwt","Kuwait",28516080
+2016,"as","Asia","aslao","Laos",18339729
+2016,"as","Asia","aslbn","Lebanon",24847944
+2016,"as","Asia","aslka","Sri Lanka",49499399
+2016,"as","Asia","asmac","Macau",6643158
+2016,"as","Asia","asmdv","Maldives",1168507
+2016,"as","Asia","asmmr","Burma",8295366
+2016,"as","Asia","asmng","Mongolia",1395059
+2016,"as","Asia","asmys","Malaysia",93864959
+2016,"as","Asia","asnpl","Nepal",3270254
+2016,"as","Asia","asomn","Oman",6763097
+2016,"as","Asia","aspak","Pakistan",253081814
+2016,"as","Asia","asphl","Philippines",69373381
+2016,"as","Asia","aspse","Palestine",1522048
+2016,"as","Asia","asqat","Qatar",24908042
+2016,"as","Asia","assau","Saudi Arabia",89997895
+2016,"as","Asia","assgp","Singapore",109271510
+2016,"as","Asia","assyr","Syria",3038.9999999999995
+2016,"as","Asia","astha","Thailand",267813353.99999997
+2016,"as","Asia","astjk","Tajikistan",333674
+2016,"as","Asia","astkm","Turkmenistan",115956
+2016,"as","Asia","astur","Turkey",588140976
+2016,"as","Asia","asuzb","Uzbekistan",737815
+2016,"as","Asia","asvnm","Vietnam",895350790.0000001
+2016,"as","Asia","asxxb","Chinese Taipei",205916469
+2016,"as","Asia","asyem","Yemen",318980
+2016,"eu","Europe","eualb","Albania",1211020
+2016,"eu","Europe","euand","Andorra",154376
+2016,"eu","Europe","euaut","Austria",17164862
+2016,"eu","Europe","eubel","Belgium",328278523
+2016,"eu","Europe","eubgr","Bulgaria",7775984.000000001
+2016,"eu","Europe","eubih","Bosnia and Herzegovina",2948173
+2016,"eu","Europe","eublr","Belarus",9729505
+2016,"eu","Europe","euche","Switzerland",81145419
+2016,"eu","Europe","eucze","Czechia",41356272
+2016,"eu","Europe","eudeu","Germany",363504313
+2016,"eu","Europe","eudnk","Denmark",17265355
+2016,"eu","Europe","euesp","Spain",67844829
+2016,"eu","Europe","euest","Estonia",5399960
+2016,"eu","Europe","eufin","Finland",15152011
+2016,"eu","Europe","eufra","France",142850635
+2016,"eu","Europe","eugbr","United Kingdom",513365994
+2016,"eu","Europe","eugib","Gibraltar",373444
+2016,"eu","Europe","eugrc","Greece",5200604
+2016,"eu","Europe","euhrv","Croatia",1603324
+2016,"eu","Europe","euhun","Hungary",18578699
+2016,"eu","Europe","euirl","Ireland",56097483
+2016,"eu","Europe","euisl","Iceland",4632586
+2016,"eu","Europe","euita","Italy",127360689
+2016,"eu","Europe","eultu","Lithuania",4509499
+2016,"eu","Europe","eulux","Luxembourg",14827110.999999998
+2016,"eu","Europe","eulva","Latvia",6109610
+2016,"eu","Europe","eumda","Moldova",2220294
+2016,"eu","Europe","eumkd","North Macedonia",3874677
+2016,"eu","Europe","eumlt","Malta",2327668
+2016,"eu","Europe","eumne","Montenegro",412482
+2016,"eu","Europe","eunld","Netherlands",425421402
+2016,"eu","Europe","eunor","Norway",17443792
+2016,"eu","Europe","eupol","Poland",42408825
+2016,"eu","Europe","euprt","Portugal",8145465
+2016,"eu","Europe","eurou","Romania",5158883
+2016,"eu","Europe","eurus","Russia",76951524
+2016,"eu","Europe","eusrb","Serbia",2791666
+2016,"eu","Europe","eusvk","Slovakia",8109919
+2016,"eu","Europe","eusvn","Slovenia",9483292
+2016,"eu","Europe","euswe","Sweden",29944553
+2016,"eu","Europe","euukr","Ukraine",48725465
+2016,"na","North America","naabw","Aruba",13209300
+2016,"na","North America","naaia","Anguilla",758097
+2016,"na","North America","naatg","Antigua and Barbuda",8896669
+2016,"na","North America","nabhs","Bahamas",40061175
+2016,"na","North America","nablz","Belize",8648772
+2016,"na","North America","nabmu","Bermuda",19018678
+2016,"na","North America","nabrb","Barbados",14940975
+2016,"na","North America","nacan","Canada",3601327597
+2016,"na","North America","nacri","Costa Rica",142442300
+2016,"na","North America","nacub","Cuba",56311
+2016,"na","North America","nacuw","Curaçao",4342033
+2016,"na","North America","nacym","Cayman Islands",9253889
+2016,"na","North America","nadma","Dominica",518122
+2016,"na","North America","nadom","Dominican Republic",584415364
+2016,"na","North America","nagrd","Grenada",3882639
+2016,"na","North America","nagrl","Greenland",100360
+2016,"na","North America","nagtm","Guatemala",465355626
+2016,"na","North America","nahnd","Honduras",1167224366
+2016,"na","North America","nahti","Haiti",33696301
+2016,"na","North America","najam","Jamaica",31537799
+2016,"na","North America","nakna","Saint Kitts and Nevis",7379881
+2016,"na","North America","nalca","Saint Lucia",7434378
+2016,"na","North America","namaf","Saint Martin",7099840
+2016,"na","North America","namex","Mexico",5019529932
+2016,"na","North America","namsr","Montserrat",420629
+2016,"na","North America","nanic","Nicaragua",343997987
+2016,"na","North America","napan","Panama",92153345
+2016,"na","North America","naslv","El Salvador",537537995
+2016,"na","North America","natca","Turks and Caicos Islands",4324206
+2016,"na","North America","natto","Trinidad and Tobago",32856419
+2016,"na","North America","navct","Saint Vincent and the Grenadines",3410554
+2016,"na","North America","navgb","British Virgin Islands",2000083
+2016,"oc","Oceania","ocaus","Australia",234715129
+2016,"oc","Oceania","occok","Cook Islands",119299
+2016,"oc","Oceania","ocfji","Fiji",3563345
+2016,"oc","Oceania","ocfsm","Micronesia",233302
+2016,"oc","Oceania","ockir","Kiribati",62543
+2016,"oc","Oceania","ocmhl","Marshall Islands",1730617
+2016,"oc","Oceania","ocncl","New Caledonia",341201
+2016,"oc","Oceania","ocniu","Niue",13337
+2016,"oc","Oceania","ocnzl","New Zealand",64089136
+2016,"oc","Oceania","ocplw","Palau",1709140
+2016,"oc","Oceania","ocpng","Papua New Guinea",987209
+2016,"oc","Oceania","ocpyf","French Polynesia",6233193
+2016,"oc","Oceania","ocslb","Solomon Islands",55124
+2016,"oc","Oceania","octkl","Tokelau",13942
+2016,"oc","Oceania","octon","Tonga",60638
+2016,"oc","Oceania","ocvut","Vanuatu",34279
+2016,"oc","Oceania","ocwsm","Samoa",715810
+2016,"sa","South America","saarg","Argentina",44218713
+2016,"sa","South America","sabol","Bolivia",5927637
+2016,"sa","South America","sabra","Brazil",195630275
+2016,"sa","South America","sachl","Chile",159266321
+2016,"sa","South America","sacol","Colombia",177054216
+2016,"sa","South America","saecu","Ecuador",41062910
+2016,"sa","South America","saflk","Falkland Islands",16187
+2016,"sa","South America","saguy","Guyana",10366244
+2016,"sa","South America","saper","Peru",129898212
+2016,"sa","South America","sapry","Paraguay",12642960
+2016,"sa","South America","sasur","Suriname",3854077
+2016,"sa","South America","saury","Uruguay",9217085
+2016,"sa","South America","saven","Venezuela",33308850
