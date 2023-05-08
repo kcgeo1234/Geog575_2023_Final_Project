@@ -4,6 +4,7 @@ var minValue;
 var dataStats = {};
 var dic ={};
 var info;
+var sidebar
 
 //function to instantiate the Leaflet map
 function createMap(){
@@ -16,7 +17,8 @@ function createMap(){
           "Organic Chemicals":"Organic_Chemicals_Export.geojson",
           "Chemical":"Chemical_Export.geojson",
           "Halogenated Hydrocarbons":"Halogenated_Hydrocarbons_Export.geojson",
-          "Metal":"Metal_export.geojson",
+          // "Metal":"Metal_export.geojson",
+          "Metal":"Metal_test.geojson",
           "Textiles":"Textiles_Export.geojson"
         };
     //create the map
@@ -29,6 +31,11 @@ function createMap(){
       maxZoom: 20,
       ext: 'png'
     }).addTo(map);
+
+    sidebar = L.control.sidebar('sidebar', {
+      position: 'right'
+    });
+    map.addControl(sidebar);
     createInfoPanel();
     getData();
 };
@@ -68,6 +75,12 @@ function updateMap(file, mapName){
     return response.json();
   })
   .then(function(json){
+    map.setView([30, 0], 2)
+    if(document.querySelector('.leaflet-right').style.display === 'none'){
+      document.querySelector('.leaflet-right').style.display = 'block'
+    } 
+    sidebar.hide();
+    info.update();
     var attributes = processData(json); //create an attributes array
     minValue = calcStats(json);
     deleteElement()
@@ -90,8 +103,8 @@ function createInfoPanel(properties, attribute){
   //update the panel based on feature properties passed
   info.update = function (properties, attribute) {
       this._div.innerHTML = '<h4>US Export Value</h4>' + 
-      (properties ? `<img src ="img/${properties.Name}.png"></img><br>`+
-          '<b>' + properties.Name + '</b><br />' + Math.round(properties[attribute]/1000)*1000 + '(USD)'
+      (properties ? `<img class = 'image' src ="img/${properties.Name}.png"></img><br>`+
+          '<b>' + properties.Name + '</b><br />' + (Math.round(properties[attribute]/1000)*1000).toLocaleString("en-US") + '(USD)'
           : 'Select a symbol');
   };
   
@@ -153,6 +166,23 @@ function calcStats(data){
   return minValue;
 };
 
+function createSidebarContent(properties, attribute){
+  document.getElementsByClassName('close')[0].addEventListener("click",function(){
+    map.setView([30, 0], 2);
+    document.querySelector('.leaflet-right').style.display = 'block';
+  })
+  const sideEle = document.getElementById('sidebar')
+  const h1 = sideEle.querySelector('h1')
+  const image = document.getElementsByClassName('flag')[0]
+  const sidebarContent = sideEle.querySelector('p')
+  let num = Math.round(properties[attribute]/1000)*1000
+  num = num.toLocaleString("en-US");
+  h1.innerHTML = 'US Export Value';
+  image.src = `img/${properties.Name}.png`
+  sidebarContent.innerHTML = `The value of the U.S. export to ${properties.Name} in year ${attribute} is ${num} USD`
+  sidebarContent.innerHTML += `<p> ${properties.Content}</p>`;
+};
+
 function createPropSymbols(data, attributes, mapName){
   //create a Leaflet GeoJSON layer and add it to the map
   L.geoJson(data, {
@@ -183,11 +213,11 @@ function pointToLayer(feature, latlng, attributes, mapName){
   
   //create circle marker layer
   var layer = L.circleMarker(latlng, options);
-
   //pass the variables into the infopanel
   layer.on({
-    mouseover:function(e){
-        info.update(feature.properties, attribute)
+    mouseover:function(){
+      info.update()
+      info.update(feature.properties, attribute)
     },
 
     mouseout: function(){
@@ -195,13 +225,18 @@ function pointToLayer(feature, latlng, attributes, mapName){
     }, 
 
     click: function(e){
-        coord = e.latlng
-        map.setView([coord.lat, coord.lng], 5);
+      coord = e.latlng
+      map.setView([coord.lat, coord.lng], 5);
+      createSidebarContent(e.target.feature.properties, attribute)
+      document.querySelector('.leaflet-right').style.display = 'none';
+      sidebar.show();
     }
 
   })
   return layer;   //return the circle marker to the L.geoJson pointToLayer option
 };
+
+
 
 //calculate the radius of each proportional symbol
 function calcPropRadius2(attValue) {
@@ -300,9 +335,11 @@ function createPopupContent(properties, attribute){
 };
 
 function updatePropSymbols(attribute, mapName){
+  map.setView([30, 0], 2)
+  sidebar.hide();
+  document.querySelector('.leaflet-right').style.display = 'block';
   var year = attribute;
   //update temporal legend
-  console.log(year)
   yearChange = document.querySelectorAll("span.slider-year")
   for (let i=0; i < yearChange.length; i++){
     yearChange[i].innerHTML = year;
@@ -318,21 +355,25 @@ function updatePropSymbols(attribute, mapName){
         } else{
         var radius = calcPropRadius1(props[attribute]);}
         layer.setRadius(radius);
-
         //update the new input for the infopanel
         layer.on({
-          mouseover:function(e){
-              info.update(props, attribute)
+          mouseover:function(){
+            info.update()
+            info.update(props, attribute)
           },
 
-          mouseout: function(e){
+          mouseout: function(){
               info.update()
           }, 
 
           click: function(e){
-              coord = e.latlng
-              map.setView([coord.lat, coord.lng], 5);
-          }
+            coord = e.latlng
+            createSidebarContent(e.target.feature.properties, attribute);
+            map.setView([coord.lat, coord.lng], 5);
+            document.querySelector('.leaflet-right').style.display = 'none';
+            sidebar.show();
+            }
+          
         });
       }
   });
