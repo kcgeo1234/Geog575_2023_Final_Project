@@ -12,7 +12,7 @@ function createMap(){
           "Non-Fillet Fresh Fish":"freshFish_Export.geojson",
           "Fish Fillets":"fishFillets_Export.geojson",
           "Machinery Mechanical Appliances & Parts":"MMAP_Export.geojson",
-          "Electrical Machinery and Electrics":"EME_Export.geojson",
+          "Electrical Machinery and Electronics":"EME_Export.geojson",
           "Machines":"machine_Export.geojson",
           "Organic Chemicals":"Organic_Chemicals_Export.geojson",
           "Chemical":"Chemical_Export.geojson",
@@ -60,7 +60,7 @@ function getData(){
         for(const key of Object.keys(dic)){
           if (id === key){
             var img = document.getElementById("spikeLine");
-            img.src = `img/${id}.png`;
+            img.src = `img/Charts/${id}.png`;
             updateMap(dic[id], id);
           }
         }
@@ -103,7 +103,7 @@ function createInfoPanel(properties, attribute){
   //update the panel based on feature properties passed
   info.update = function (properties, attribute) {
       this._div.innerHTML = '<h4>US Export Value</h4>' + 
-      (properties ? `<img class = 'image' src ="img/${properties.Name}.png"></img><br>`+
+      (properties ? `<img class = 'image' src ="img/Charts/${properties.Name}.png"></img><br>`+
           '<b>' + properties.Name + '</b><br />' + (Math.round(properties[attribute]/1000)*1000).toLocaleString("en-US") + '(USD)'
           : 'Select a symbol');
   };
@@ -178,7 +178,7 @@ function createSidebarContent(properties, attribute){
   let num = Math.round(properties[attribute]/1000)*1000
   num = num.toLocaleString("en-US");
   h1.innerHTML = 'US Export Value';
-  image.src = `img/${properties.Name}.png`
+  image.src = `img/Charts/${properties.Name}.png`
   sidebarContent.innerHTML = `The value of the U.S. export to ${properties.Name} in year ${attribute} is ${num} USD`
   sidebarContent.innerHTML += `<p> ${properties.Content}</p>`;
 };
@@ -205,7 +205,7 @@ function pointToLayer(feature, latlng, attributes, mapName){
   };
 
   var attValue = Number(feature.properties[attribute]);   //For each feature, determine its value for the selected attribute
-  if (mapName === 'Non-Fillet Fresh Fish' || mapName ==='Electrical Machinery and Electrics'){
+  if (mapName === 'Non-Fillet Fresh Fish' || mapName ==='Electrical Machinery and Electronics'){
     options.radius = calcPropRadius2(attValue);
     } else{      
       options.radius = calcPropRadius1(attValue);
@@ -270,7 +270,7 @@ function createLegend(attributes, mapName){
 
       //Step 2: loop to add each circle and text to svg string
       for (var i=0; i<circles.length; i++){
-        if (mapName === 'Non-Fillet Fresh Fish' || mapName ==='Electrical Machinery and Electrics'){
+        if (mapName === 'Non-Fillet Fresh Fish' || mapName ==='Electrical Machinery and Electronics'){
           var radius = calcPropRadius2(dataStats[circles[i]]);  
           var cy = 80 - radius;  
           //circle string
@@ -350,7 +350,7 @@ function updatePropSymbols(attribute, mapName){
         //update the layer style and popup
         var props = layer.feature.properties;   //access feature properties
         //update each feature's radius based on new attribute values
-        if (mapName === 'Non-Fillet Fresh Fish' || mapName ==='Electrical Machinery and Electrics'){
+        if (mapName === 'Non-Fillet Fresh Fish' || mapName ==='Electrical Machinery and Electronics'){
           var radius = calcPropRadius2(props[attribute]);
         } else{
         var radius = calcPropRadius1(props[attribute]);}
