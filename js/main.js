@@ -15,10 +15,10 @@ function createMap(){
           "Electrical Machinery and Electronics":"EME_Export.geojson",
           "Machines":"machine_Export.geojson",
           "Organic Chemicals":"Organic_Chemicals_Export.geojson",
-          "Chemical":"Chemical_Export.geojson",
+          "Chemicals":"Chemical_Export.geojson",
           "Halogenated Hydrocarbons":"Halogenated_Hydrocarbons_Export.geojson",
-          // "Metal":"Metal_export.geojson",
-          "Metal":"Metal_test.geojson",
+          // "Metals":"Metal_export.geojson",
+          "Metals":"Metal_test.geojson",
           "Textiles":"Textiles_Export.geojson"
         };
     //create the map
@@ -79,6 +79,7 @@ function updateMap(file, mapName){
     if(document.querySelector('.leaflet-right').style.display === 'none'){
       document.querySelector('.leaflet-right').style.display = 'block'
     } 
+    document.getElementById('prodName').innerHTML = mapName
     sidebar.hide();
     info.update();
     var attributes = processData(json); //create an attributes array
@@ -262,7 +263,7 @@ function createLegend(attributes, mapName){
       var container = document.querySelector(".sidebar-legend");
 
       //PUT YOUR SCRIPT TO CREATE THE TEMPORAL LEGEND HERE
-      container.insertAdjacentHTML("beforeend",`<p class="temporalLegend">${mapName}</p>`);
+      container.insertAdjacentHTML("beforeend",`<p class="temporalLegend"><b>${mapName}</b></p>`);
       //Step 1: start attribute legend svg string
       var svg = '<svg id="attribute-legend" width="400px" height="120px">';
       //array of circle names to base loop on
@@ -272,7 +273,7 @@ function createLegend(attributes, mapName){
       for (var i=0; i<circles.length; i++){
         if (mapName === 'Non-Fillet Fresh Fish' || mapName ==='Electrical Machinery and Electronics'){
           var radius = calcPropRadius2(dataStats[circles[i]]);  
-          var cy = 80 - radius;  
+          var cy = 120 - radius;  
           //circle string
           svg += '<circle class="legend-circle" id="' + 
           circles[i] + '" r="' + radius + '"cy="' + cy + '" fill="#D1AB41" fill-opacity="0.8" stroke="#000000" cx="210"/>'; 
@@ -284,13 +285,13 @@ function createLegend(attributes, mapName){
         } else{
           //Step 3: assign the r and cy attributes  
           var radius = calcPropRadius1(dataStats[circles[i]]);  
-          var cy = 80 - radius;  
+          var cy = 120 - radius;  
           //circle string
           svg += '<circle class="legend-circle" id="' + 
           circles[i] + '" r="' + radius + '"cy="' + cy + '" fill="#D1AB41" fill-opacity="0.8" stroke="#000000" cx="210"/>'; 
           
           //evenly space out labels            
-          var textY = i * 20 + 35;            
+          var textY = i * 20 + 80;            
           //text string            
           svg += '<text id="' + circles[i] + '-text" x="250" y="' + textY + '">' + Math.round(dataStats[circles[i]]/1000000)+ ' Million</text>';
         }

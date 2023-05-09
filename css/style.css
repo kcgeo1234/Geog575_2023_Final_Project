@@ -18,20 +18,20 @@ body{
 
 #spikeLine{
   position: absolute;
-  top: 70px;
+  top: 90px;
 }
 
 
 p.slider-label{
   position: absolute;
-  top: 160px;
+  top: 190px;
   margin-bottom: 0;
   color: white;
 }
 
 .range-slider {
   position: relative;
-  top: -40px;
+  top: -20px;
   z-index: 9999;
 }
 
@@ -180,4 +180,13 @@ button.dropdown-btn {
 
 .flag{
   border: 2px solid black;
+}
+
+#lineName{
+  font-size: 10px;
+  position: relative;
+  top: 60px;
+  left: 5px;
+  color: white;
+  z-index: 9999;
 }
