@@ -49,7 +49,7 @@ function getData(){
     var attributes = processData(json); //create an attributes array
     minValue = calcStats(json);
     createPropSymbols(json, attributes);
-    createLegend(attributes, "Metal");
+    createLegend(attributes, "Metals");
     createSequenceControls(attributes);
   })
   .then(function(){
