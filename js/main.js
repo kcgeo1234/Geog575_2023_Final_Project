@@ -62,6 +62,7 @@ function getData(){
             var img = document.getElementById("spikeLine");
             img.src = `img/Charts/${id}.png`;
             updateMap(dic[id], id);
+            console.log(id)
           }
         }
       });
@@ -79,7 +80,6 @@ function updateMap(file, mapName){
     if(document.querySelector('.leaflet-right').style.display === 'none'){
       document.querySelector('.leaflet-right').style.display = 'block'
     } 
-    document.getElementById('prodName').innerHTML = mapName
     sidebar.hide();
     info.update();
     var attributes = processData(json); //create an attributes array
@@ -206,11 +206,19 @@ function pointToLayer(feature, latlng, attributes, mapName){
   };
 
   var attValue = Number(feature.properties[attribute]);   //For each feature, determine its value for the selected attribute
-  if (mapName === 'Non-Fillet Fresh Fish' || mapName ==='Electrical Machinery and Electronics'){
+  if (mapName === 'Non-Fillet Fresh Fish'){
     options.radius = calcPropRadius2(attValue);
-    } else{      
+  } 
+  else if(mapName === 'Machinery, Mechanical Appliance, & Parts' || 
+    mapName ==='Electrical Machinery and Electronics'||
+    mapName ==='Machines'||
+    mapName ==='Organic Chemicals'||
+    mapName ==='Chemicals'){
+    options.radius = calcPropRadius3(attValue);
+  } 
+  else{      
       options.radius = calcPropRadius1(attValue);
-    }  //Give each feature's circle marker a radius based on its attribute value
+  }  //Give each feature's circle marker a radius based on its attribute value
   
   //create circle marker layer
   var layer = L.circleMarker(latlng, options);
@@ -237,12 +245,19 @@ function pointToLayer(feature, latlng, attributes, mapName){
   return layer;   //return the circle marker to the L.geoJson pointToLayer option
 };
 
-
+//calculate the radius of each proportional symbol
+function calcPropRadius3(attValue) {
+  //constant factor adjusts symbol sizes evenly
+  var minRadius = 5;
+  //Flannery Apperance Compensation formula
+  var radius = 1.0083 * Math.pow(attValue/minValue,0.5715) * minRadius
+  return radius;
+};
 
 //calculate the radius of each proportional symbol
 function calcPropRadius2(attValue) {
   //constant factor adjusts symbol sizes evenly
-  var minRadius = 1;
+  var minRadius = 2;
   //Flannery Apperance Compensation formula
   var radius = 1.0083 * Math.pow(attValue/minValue,0.5715) * minRadius
   return radius;
@@ -271,7 +286,7 @@ function createLegend(attributes, mapName){
 
       //Step 2: loop to add each circle and text to svg string
       for (var i=0; i<circles.length; i++){
-        if (mapName === 'Non-Fillet Fresh Fish' || mapName ==='Electrical Machinery and Electronics'){
+        if (mapName === 'Non-Fillet Fresh Fish'){
           var radius = calcPropRadius2(dataStats[circles[i]]);  
           var cy = 120 - radius;  
           //circle string
@@ -279,10 +294,27 @@ function createLegend(attributes, mapName){
           circles[i] + '" r="' + radius + '"cy="' + cy + '" fill="#D1AB41" fill-opacity="0.8" stroke="#000000" cx="210"/>'; 
           
           //evenly space out labels            
-          var textY = i * 20 + 35;            
+          var textY = i * 20 + 80;            
+          //text string            
+          svg += '<text id="' + circles[i] + '-text" x="260" y="' + textY + '">' + Math.round(dataStats[circles[i]]/1000000)+ ' Million</text>';
+        } 
+        else if(mapName === 'Machinery Mechanical Appliances & Parts' || 
+                  mapName ==='Electrical Machinery and Electronics'||
+                  mapName ==='Machines'||
+                  mapName ==='Organic Chemicals'||
+                  mapName ==='Chemicals'){
+          var radius = calcPropRadius3(dataStats[circles[i]]);  
+          var cy = 120 - radius;  
+          //circle string
+          svg += '<circle class="legend-circle" id="' + 
+          circles[i] + '" r="' + radius + '"cy="' + cy + '" fill="#D1AB41" fill-opacity="0.8" stroke="#000000" cx="210"/>'; 
+          
+          //evenly space out labels            
+          var textY = i * 20 + 80;            
           //text string            
           svg += '<text id="' + circles[i] + '-text" x="250" y="' + textY + '">' + Math.round(dataStats[circles[i]]/1000000)+ ' Million</text>';
-        } else{
+        } 
+        else{
           //Step 3: assign the r and cy attributes  
           var radius = calcPropRadius1(dataStats[circles[i]]);  
           var cy = 120 - radius;  
@@ -351,9 +383,17 @@ function updatePropSymbols(attribute, mapName){
         //update the layer style and popup
         var props = layer.feature.properties;   //access feature properties
         //update each feature's radius based on new attribute values
-        if (mapName === 'Non-Fillet Fresh Fish' || mapName ==='Electrical Machinery and Electronics'){
+        if (mapName === 'Non-Fillet Fresh Fish'){
           var radius = calcPropRadius2(props[attribute]);
-        } else{
+        } 
+        else if(mapName === 'Machinery, Mechanical Appliance, & Parts' || 
+                  mapName ==='Electrical Machinery and Electronics'||
+                  mapName ==='Machines'||
+                  mapName ==='Organic Chemicals'||
+                  mapName ==='Chemicals'){
+          var radius = calcPropRadius3(props[attribute]);
+        } 
+        else{
         var radius = calcPropRadius1(props[attribute]);}
         layer.setRadius(radius);
         //update the new input for the infopanel
