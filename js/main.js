@@ -104,7 +104,7 @@ function createInfoPanel(properties, attribute){
   //update the panel based on feature properties passed
   info.update = function (properties, attribute) {
       this._div.innerHTML = '<h4>US Export Value</h4>' + 
-      (properties ? `<img class = 'image' src ="img/Charts/${properties.Name}.png"></img><br>`+
+      (properties ? `<img class = 'image' src ="img/Flags/${properties.Name}.png"></img><br>`+
           '<b>' + properties.Name + '</b><br />' + (Math.round(properties[attribute]/1000)*1000).toLocaleString("en-US") + '(USD)'
           : 'Select a symbol');
   };
@@ -179,7 +179,7 @@ function createSidebarContent(properties, attribute){
   let num = Math.round(properties[attribute]/1000)*1000
   num = num.toLocaleString("en-US");
   h1.innerHTML = 'US Export Value';
-  image.src = `img/Charts/${properties.Name}.png`
+  image.src = `img/Flags/${properties.Name}.png`
   sidebarContent.innerHTML = `The value of the U.S. export to ${properties.Name} in year ${attribute} is ${num} USD`
   sidebarContent.innerHTML += `<p> ${properties.Content}</p>`;
 };
