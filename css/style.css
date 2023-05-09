@@ -4,6 +4,7 @@ body{
   margin:0;
 }
 
+
 #mapTitle{
   padding-top: 1.5%;
   padding-bottom: 1.5%;  
@@ -15,6 +16,14 @@ body{
 #mapTitle span{
   display: inline-block;
   transform: translateX(400px);
+  font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif;
+}
+
+#s2{
+  padding-left: 20px;
+  font-size: 18px;
+  font-style: italic;
+  color: #d1ab41;
 }
 
 leaflet-right{
@@ -55,7 +64,8 @@ p.slider-label{
 
 p.temporalLegend {
   text-align: center;
-  color: white;
+  color: #d1ab41;
+  font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif;
 }
 
 
@@ -64,13 +74,14 @@ p.temporalLegend {
   height: 100px;  
   background-color: rgba(255,255,255,0.8);  
   padding: 10px;  
-  line-height: 0px;  
+  line-height: 0px;
   text-align: center;  
   border: solid gray 1px;  
 }  
 
 /* Fixed sidenav, full height*/
 .sidenav {
+  font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif;
   height: 100%;
   width: 350px;
   position: fixed;
@@ -82,6 +93,7 @@ p.temporalLegend {
 }
 
 .dropdown-btn {
+  font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif;
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -117,6 +129,7 @@ button.dropdown-btn {
 }
 
 .sidenav button.cateName{
+  font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif;
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 15px;
@@ -174,7 +187,7 @@ button.dropdown-btn {
 
 .info {
   padding: 6px 8px;
-  font: 14px/16px Arial, Helvetica, sans-serif;
+  font: 14px/16px "Century Gothic", CenturyGothic,AppleGothic,sans-serif;
   color: black;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -195,10 +208,25 @@ button.dropdown-btn {
 }
 
 #lineName{
+  font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif;
   font-size: 10px;
   position: relative;
   top: 60px;
   left: 5px;
   color: white;
   z-index: 9999;
+}
+
+
+
+#sidebar p{
+  font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif;
+}
+
+#sidebar h1{
+  font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif;
+}
+
+.slider-label{
+  font-family: "Century Gothic", CenturyGothic,AppleGothic,sans-serif;  
 }
