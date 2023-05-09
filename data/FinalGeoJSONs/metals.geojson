@@ -10,14 +10,14 @@
                 "2019": 18282844354,
                 "2020": 15261639380,
                 "2021": 21224431021,
-                "Name": "Mexico",
-                "Content": "abcd"
+                "Country": "Mexico",
+                "Content": "Mexico is one of the two main destinations of American metal exports. Mexico is one of the U.S.’s largest trading partners for goods overall, in part due to proximity, and in part due to the North American Free Trade Agreement (NAFTA), which allows U.S. companies to ship qualifying goods to Canada or Mexico duty-free."
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -102.289691,
-                    23.920061
+                    -102.3592103,
+                    24.44385214
                 ]
             }
         },
@@ -30,8 +30,8 @@
                 "2019": 15512720107,
                 "2020": 13524435921,
                 "2021": 18052864155,
-                "Name": "Canada",
-                "Content": "abcd"
+                "Country": "Canada",
+                "Content": "Canada is one of the two main destinations of American metal exports. Canada and the U.S. share one of the largest trading relationships in the world, in part due to close cultural ties, and in part due to the North American Free Trade Agreement (NAFTA), which allows U.S. companies to ship qualifying goods to Canada or Mexico duty-free."
             },
             "geometry": {
                 "type": "Point",
@@ -50,8 +50,8 @@
                 "2019": 3068991894,
                 "2020": 2852049125,
                 "2021": 3975632115,
-                "Name": "China",
-                "Content": "abcd"
+                "Country": "China",
+                "Content": "U.S.-China trade has exploded in the two decades since China joined the World Trade Organization, which has benefited both countries’ consumers and companies. However, China’s state-led development has created friction with the U.S., leading to increasingly tense relations between the two countries."
             },
             "geometry": {
                 "type": "Point",
@@ -70,8 +70,8 @@
                 "2019": 2219441827,
                 "2020": 1892157031,
                 "2021": 2305312981,
-                "Name": "South Korea",
-                "Content": "abcd"
+                "Country": "South Korea",
+                "Content": "The U.S.-Korea trade agreement entered into force on March 15, 2012, providing more opportunities for U.S. exporters to sell more goods to Korean customers.  As a result, South Korea has become one of the U.S.’s largest trading partners and one of the most geopolitically important in East Asia."
             },
             "geometry": {
                 "type": "Point",
@@ -90,8 +90,8 @@
                 "2019": 1389259520,
                 "2020": 1420391046,
                 "2021": 2104695734,
-                "Name": "Malaysia",
-                "Content": "abcd"
+                "Country": "Malaysia",
+                "Content": "Malaysia was the U.S.’s 18th largest trading partner in 2020, and the U.S. is Malaysia’s largest foreign investor.  Electrical machinery and electronics, and metals were the only industries in the OEC dataset where Malaysia was one of the top importers."
             },
             "geometry": {
                 "type": "Point",
@@ -110,14 +110,14 @@
                 "2019": 1609822010,
                 "2020": 1328853888,
                 "2021": 1934637486,
-                "Name": "India",
-                "Content": "abcd"
+                "Country": "India",
+                "Content": "The United States is India's largest trading partner. Many U.S. companies view India as a critical market and have expanded their operations there, but there still is no trade agreement between the U.S. and India."
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    79.132924,
-                    22.412321
+                    79.20995325,
+                    22.63761428
                 ]
             }
         },
@@ -130,14 +130,14 @@
                 "2019": 1425601848,
                 "2020": 1404403022,
                 "2021": 1863693819,
-                "Name": "Turkey",
-                "Content": "abcd"
+                "Country": "Turkey",
+                "Content": "Although overall U.S.-Turkey trade jumped from $10.8 billion in 2009 to $21 billion in 2020, it remains modest compared to its potential. Textiles and metals were in the only industries in the OEC dataset where Turkey was one of the top importers."
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    34.51052,
-                    39.339547
+                    35.32278384,
+                    39.07799488
                 ]
             }
         },
@@ -150,8 +150,8 @@
                 "2019": 1897907223,
                 "2020": 1585455712,
                 "2021": 1727070672,
-                "Name": "Germany",
-                "Content": "abcd"
+                "Country": "Germany",
+                "Content": "Germany is a major economic powerhouse of the European Union, which is one of the U.S.’s largest and most important trading partners.  While there is currently no dedicated free trade agreement between the U.S. and the EU, the U.S. remains the EU’s single largest trading partner."
             },
             "geometry": {
                 "type": "Point",
@@ -170,14 +170,14 @@
                 "2019": 1844038786,
                 "2020": 1436957444,
                 "2021": 1418731952,
-                "Name": "United Kingdom",
-                "Content": "abcd"
+                "Country": "United Kingdom",
+                "Content": "The United States and UK have a relatively open trading relationship, and the two countries’ trade policies align on many fronts.  However, some frictions emerge periodically on specific issues, such as tariffs."
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -1.247349,
-                    52.418788
+                    -1.782040928,
+                    52.58317586
                 ]
             }
         },
@@ -190,8 +190,8 @@
                 "2019": 1917926607,
                 "2020": 1492886813,
                 "2021": 1247846232,
-                "Name": "Japan",
-                "Content": "abcd"
+                "Country": "Japan",
+                "Content": "The U.S. and Japan recently signed the U.S.-Japan Trade Agreement, which entered into force on January 1, 2020.  The relationship is important to the U.S. given its geopolitical interests in East Asia, and a majority of Japanese citizens consider the U.S. to be their closest ally."
             },
             "geometry": {
                 "type": "Point",
@@ -210,8 +210,8 @@
                 "2019": 1712170218,
                 "2020": 1213796962,
                 "2021": 912316989,
-                "Name": "France",
-                "Content": "abcd"
+                "Country": "France",
+                "Content": "France is part of the European Union, which is one of the U.S.’s largest and most important trading partners.  While there is currently no dedicated free trade agreement between the U.S. and the EU, the U.S. remains the EU’s single largest trading partner."
             },
             "geometry": {
                 "type": "Point",
