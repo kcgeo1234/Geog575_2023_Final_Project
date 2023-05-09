@@ -395,7 +395,7 @@ function updatePropSymbols(attribute, mapName){
         else{
         var radius = calcPropRadius1(props[attribute]);}
         layer.setRadius(radius);
-        //update the new input for the infopanel
+        //update the new input for the infopanel and the side panel
         layer.on({
           mouseover:function(){
             info.update()
@@ -419,8 +419,7 @@ function updatePropSymbols(attribute, mapName){
   });
 };
 
- 
-
+// create dropdown menu on the left
 function setdropdown(){
     var dropdown = document.getElementsByClassName("dropdown-btn");
     var cateOpt = document.getElementsByClassName("cateName");
