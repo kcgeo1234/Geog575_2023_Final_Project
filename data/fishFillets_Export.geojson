@@ -1,176 +1,185 @@
 {
     "type": "FeatureCollection",
     "features": [
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 119326314,
-          "2017": 166936502,
-          "2018": 184922285,
-          "2019": 289050189,
-          "2020": 245590899,
-          "2021": 231190339,
-          "Name": "Netherlands"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 119326314,
+                "2017": 166936502,
+                "2018": 184922285,
+                "2019": 289050189,
+                "2020": 245590899,
+                "2021": 231190339,
+                "Name": "Netherlands",
+                "Content": "The Netherlands’ U.S. fish fillet exports have recently increased considerably.  From 2019 to 2020, it was even the largest importer of U.S. fish fillets, beating out Canada and Japan. The Netherlands is part of the European Union, which is one of the U.S.’s largest and most important trading partners.  While there is currently no dedicated free trade agreement between the U.S. and the EU, the U.S. remains the EU’s single largest trading partner."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.501896,
+                    52.554205
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            5.501896,
-            52.554205
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 176976167,
-          "2017": 206740256,
-          "2018": 221126519,
-          "2019": 148503701,
-          "2020": 205323882,
-          "2021": 271157550,
-          "Name": "Canada"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 176976167,
+                "2017": 206740256,
+                "2018": 221126519,
+                "2019": 148503701,
+                "2020": 205323882,
+                "2021": 271157550,
+                "Name": "Canada",
+                "Content": "Canada currently received the highest number of fish fillet exports from the U.S., but the top spot shifted considerably between many countries in the five years prior. Canada and the U.S. share one of the largest trading relationships in the world, in part due to close cultural ties, and in part due to the North American Free Trade Agreement (NAFTA), which allows U.S. companies to ship qualifying goods to Canada or Mexico duty-free."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.384858,
+                    58.33747
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            -112.384858,
-            58.33747
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 212825626,
-          "2017": 148994962,
-          "2018": 155515419,
-          "2019": 148859212,
-          "2020": 115133652,
-          "2021": 168700385,
-          "Name": "Germany"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 212825626,
+                "2017": 148994962,
+                "2018": 155515419,
+                "2019": 148859212,
+                "2020": 115133652,
+                "2021": 168700385,
+                "Name": "Germany",
+                "Content": "Germany was the highest importer of U.S. fish fillets in 2016, but has since taken a back seat to Canada, the Netherlands, and Japan. Germany is a major economic powerhouse of the European Union, which is one of the U.S.’s largest and most important trading partners.  While there is currently no dedicated free trade agreement between the U.S. and the EU, the U.S. remains the EU’s single largest trading partner."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.62743,
+                    51.196755
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            9.62743,
-            51.196755
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 212540846,
-          "2017": 289759785,
-          "2018": 332932065,
-          "2019": 263953178,
-          "2020": 182634536,
-          "2021": 205642657,
-          "Name": "Japan"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 212540846,
+                "2017": 289759785,
+                "2018": 332932065,
+                "2019": 263953178,
+                "2020": 182634536,
+                "2021": 205642657,
+                "Name": "Japan",
+                "Content": "Japan was the largest importer of U.S. fish fillets in 2017 and 2018.  In 2018, it bought $333 billion worth of fish fillets, the largest yield from any U.S. trading partner ever.  Japanese imports of American fish fillets have since died down and been overtaken by Canada and the Netherlands. The U.S. and Japan recently signed the U.S.-Japan Trade Agreement, which entered into force on January 1, 2020.  The relationship is important to the U.S. given its geopolitical interests in East Asia, and a majority of Japanese citizens consider the U.S. to be their closest ally."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.441899,
+                    36.13793
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            138.441899,
-            36.13793
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 201282209,
-          "2017": 199122097,
-          "2018": 200814056,
-          "2019": 157453897,
-          "2020": 138305266,
-          "2021": 157627013,
-          "Name": "South Korea"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 201282209,
+                "2017": 199122097,
+                "2018": 200814056,
+                "2019": 157453897,
+                "2020": 138305266,
+                "2021": 157627013,
+                "Name": "South Korea",
+                "Content": "Though it has never been in the top spot, South Korea was a major importer of American Fish Fillets between 2016-2021. The U.S.-Korea trade agreement entered into force on March 15, 2012, providing more opportunities for U.S. exporters to sell more goods to Korean customers.  As a result, South Korea has become one of the U.S.’s largest trading partners and one of the most geopolitically important in East Asia."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    128.123986,
+                    36.382192
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            128.123986,
-            36.382192
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 32553940,
-          "2017": 56435089,
-          "2018": 46079753,
-          "2019": 35446857,
-          "2020": 28316516,
-          "2021": 22669769,
-          "Name": "China"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 32553940,
+                "2017": 56435089,
+                "2018": 46079753,
+                "2019": 35446857,
+                "2020": 28316516,
+                "2021": 22669769,
+                "Name": "China",
+                "Content": "U.S.-China trade has exploded in the two decades since China joined the World Trade Organization, which has benefited both countries’ consumers and companies. However, China’s state-led development has created friction with the U.S., leading to increasingly tense relations between the two countries."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    106.431983,
+                    32.523743
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            106.431983,
-            32.523743
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 17307966,
-          "2017": 28350973,
-          "2018": 14956885,
-          "2019": 15475405,
-          "2020": 16776431,
-          "2021": 42212139,
-          "Name": "Poland"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 17307966,
+                "2017": 28350973,
+                "2018": 14956885,
+                "2019": 15475405,
+                "2020": 16776431,
+                "2021": 42212139,
+                "Name": "Poland",
+                "Content": "Poland is part of the European Union, which is one of the U.S.’s largest and most important trading partners.  While there is currently no dedicated free trade agreement between the U.S. and the EU, the U.S. remains the EU’s single largest trading partner."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    20.388926,
+                    51.899304
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            20.388926,
-            51.899304
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 61301444,
-          "2017": 62755795,
-          "2018": 78540509,
-          "2019": 81779829,
-          "2020": 83320789,
-          "2021": 78524196,
-          "Name": "France"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 61301444,
+                "2017": 62755795,
+                "2018": 78540509,
+                "2019": 81779829,
+                "2020": 83320789,
+                "2021": 78524196,
+                "Name": "France",
+                "Content": "France is part of the European Union, which is one of the U.S.’s largest and most important trading partners.  While there is currently no dedicated free trade agreement between the U.S. and the EU, the U.S. remains the EU’s single largest trading partner."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.549047,
+                    46.698481
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            2.549047,
-            46.698481
-          ]
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 48034780,
+                "2017": 46843235,
+                "2018": 52354376,
+                "2019": 53749293,
+                "2020": 55261468,
+                "2021": 50563140,
+                "Name": "Spain",
+                "Content": "Spain is part of the European Union, which is one of the U.S.’s largest and most important trading partners.  While there is currently no dedicated free trade agreement between the U.S. and the EU, the U.S. remains the EU’s single largest trading partner."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.464618,
+                    40.09095
+                ]
+            }
         }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 48034780,
-          "2017": 46843235,
-          "2018": 52354376,
-          "2019": 53749293,
-          "2020": 55261468,
-          "2021": 50563140,
-          "Name": "Spain"
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            -3.464618,
-            40.09095
-          ]
-        }
-      }
     ]
-  }
+}

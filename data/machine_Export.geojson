@@ -1,271 +1,285 @@
 {
     "type": "FeatureCollection",
     "features": [
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 53070029774,
-          "2017": 57462860728,
-          "2018": 59785120844,
-          "2019": 58438949417,
-          "2020": 51047894058,
-          "2021": 55901701592,
-          "Name": "Canada"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 53070029774,
+                "2017": 57462860728,
+                "2018": 59785120844,
+                "2019": 58438949417,
+                "2020": 51047894058,
+                "2021": 55901701592,
+                "Name": "Canada",
+                "Content": "Canada is one of the two main destinations of American machine exports. Canada and the U.S. share one of the largest trading relationships in the world, in part due to close cultural ties, and in part due to the North American Free Trade Agreement (NAFTA), which allows U.S. companies to ship qualifying goods to Canada or Mexico duty-free."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.384858,
+                    58.33747
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            -112.384858,
-            58.33747
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 73397875225,
-          "2017": 78808408892,
-          "2018": 83016374140,
-          "2019": 78725130499,
-          "2020": 68176852227,
-          "2021": 73301684205,
-          "Name": "Mexico"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 73397875225,
+                "2017": 78808408892,
+                "2018": 83016374140,
+                "2019": 78725130499,
+                "2020": 68176852227,
+                "2021": 73301684205,
+                "Name": "Mexico",
+                "Content": "Mexico is one of the two main destinations of American machine exports. Mexico is one of the U.S.’s largest trading partners for goods overall, in part due to proximity, and in part due to the North American Free Trade Agreement (NAFTA), which allows U.S. companies to ship qualifying goods to Canada or Mexico duty-free."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -102.289691,
+                    23.920061
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            -102.289691,
-            23.920061
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 22205036319,
-          "2017": 23521606134,
-          "2018": 24628467674,
-          "2019": 24327365772,
-          "2020": 26997041533,
-          "2021": 32167992368,
-          "Name": "China"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 22205036319,
+                "2017": 23521606134,
+                "2018": 24628467674,
+                "2019": 24327365772,
+                "2020": 26997041533,
+                "2021": 32167992368,
+                "Name": "China",
+                "Content": "Despite increasing hostility between China and the United States from 2016-2021, Chinese imports of American machines saw an overall increase. U.S.-China trade has exploded in the two decades since China joined the World Trade Organization, which has benefited both countries’ consumers and companies. However, China’s state-led development has created friction with the U.S., leading to increasingly tense relations between the two countries."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    106.431983,
+                    32.523743
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            106.431983,
-            32.523743
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 9268651207,
-          "2017": 12057377080,
-          "2018": 10124776956,
-          "2019": 9821720887,
-          "2020": 10658830016,
-          "2021": 11481144904,
-          "Name": "Singapore"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 9268651207,
+                "2017": 12057377080,
+                "2018": 10124776956,
+                "2019": 9821720887,
+                "2020": 10658830016,
+                "2021": 11481144904,
+                "Name": "Singapore",
+                "Content": "The U.S. and Singapore have a’close and cooperative trade relationship underpinned by The United States-Singapore Free Trade Agreement, which entered in force on January 1, 2004. The agreement has functioned generally smoothly, with trade and investment growing substantially in both directions."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    103.80938,
+                    1.357685
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            103.80938,
-            1.357685
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 12206263646,
-          "2017": 13676999065,
-          "2018": 13971459327,
-          "2019": 12718180893,
-          "2020": 11144801913,
-          "2021": 13910650970,
-          "Name": "Hong Kong"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 12206263646,
+                "2017": 13676999065,
+                "2018": 13971459327,
+                "2019": 12718180893,
+                "2020": 11144801913,
+                "2021": 13910650970,
+                "Name": "Hong Kong",
+                "Content": "Hong Kong is an important entrep’t for trade between the US and Mainland China. In 2021, 4.9% of Mainland China's exports to the US, and 7.6% of Mainland China's imports from the US, were routed through Hong Kong."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.15769,
+                    22.28552
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            114.15769,
-            22.28552
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 9322857279,
-          "2017": 9722613141,
-          "2018": 10121743911,
-          "2019": 8030362922,
-          "2020": 8416640855,
-          "2021": 10858067851,
-          "Name": "Taiwan"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 9322857279,
+                "2017": 9722613141,
+                "2018": 10121743911,
+                "2019": 8030362922,
+                "2020": 8416640855,
+                "2021": 10858067851,
+                "Name": "Taiwan",
+                "Content": "Taiwan is a top U.S. trade partner and a key link in global technology and manufacturing supply chains.  It was the U.S.’s 10th largest trade partner in 2022, and the U.S. was Taiwan’s third largest source of imports."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.955426,
+                    23.798532
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            120.955426,
-            23.798532
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 12293317169,
-          "2017": 12362305963,
-          "2018": 12725486687,
-          "2019": 12255599029,
-          "2020": 11759532520,
-          "2021": 10633071036,
-          "Name": "Japan"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 12293317169,
+                "2017": 12362305963,
+                "2018": 12725486687,
+                "2019": 12255599029,
+                "2020": 11759532520,
+                "2021": 10633071036,
+                "Name": "Japan",
+                "Content": "The U.S. and Japan recently signed the U.S.-Japan Trade Agreement, which entered into force on January 1, 2020.  The relationship is important to the U.S. given its geopolitical interests in East Asia, and a majority of Japanese citizens consider the U.S. to be their closest ally."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.441899,
+                    36.13793
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            138.441899,
-            36.13793
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 10186130764,
-          "2017": 11125526460,
-          "2018": 10777894301,
-          "2019": 10680326120,
-          "2020": 10214877178,
-          "2021": 10603252558,
-          "Name": "South Korea"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 10186130764,
+                "2017": 11125526460,
+                "2018": 10777894301,
+                "2019": 10680326120,
+                "2020": 10214877178,
+                "2021": 10603252558,
+                "Name": "South Korea",
+                "Content": "The U.S.-Korea trade agreement entered into force on March 15, 2012, providing more opportunities for U.S. exporters to sell more goods to Korean customers.  As a result, South Korea has become one of the U.S.’s largest trading partners and one of the most geopolitically important in East Asia."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    128.123986,
+                    36.382192
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            128.123986,
-            36.382192
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 13462236656,
-          "2017": 14886205098,
-          "2018": 14801363880,
-          "2019": 15984113450,
-          "2020": 12914992723,
-          "2021": 14817638056,
-          "Name": "Germany"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 13462236656,
+                "2017": 14886205098,
+                "2018": 14801363880,
+                "2019": 15984113450,
+                "2020": 12914992723,
+                "2021": 14817638056,
+                "Name": "Germany",
+                "Content": "Germany is a major economic powerhouse of the European Union, which is one of the U.S.’s largest and most important trading partners.  While there is currently no dedicated free trade agreement between the U.S. and the EU, the U.S. remains the EU’s single largest trading partner."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.62743,
+                    51.196755
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            9.62743,
-            51.196755
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 11870437730,
-          "2017": 10355807474,
-          "2018": 11090281068,
-          "2019": 11106622636,
-          "2020": 11506983950,
-          "2021": 12013966993,
-          "Name": "United Kingdom"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 11870437730,
+                "2017": 10355807474,
+                "2018": 11090281068,
+                "2019": 11106622636,
+                "2020": 11506983950,
+                "2021": 12013966993,
+                "Name": "United Kingdom",
+                "Content": "The United States and UK have a relatively open trading relationship, and the two countries’ trade policies align on many fronts.  However, some frictions emerge periodically on specific issues, such as tariffs."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.247349,
+                    53.5
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            -1.247349,
-            53.5
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 8383089245,
-          "2017": 9439465697,
-          "2018": 9802641127,
-          "2019": 9652734681,
-          "2020": 9394007337,
-          "2021": 10696574771,
-          "Name": "Netherlands"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 8383089245,
+                "2017": 9439465697,
+                "2018": 9802641127,
+                "2019": 9652734681,
+                "2020": 9394007337,
+                "2021": 10696574771,
+                "Name": "Netherlands",
+                "Content": "The Netherlands is part of the European Union, which is one of the U.S.’s largest and most important trading partners.  While there is currently no dedicated free trade agreement between the U.S. and the EU, the U.S. remains the EU’s single largest trading partner."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.501896,
+                    52.554205
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            5.501896,
-            52.554205
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 7455656586,
-          "2017": 9774034821,
-          "2018": 7391204817,
-          "2019": 6804752263,
-          "2020": 6802276192,
-          "2021": 7579842357,
-          "Name": "France"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 7455656586,
+                "2017": 9774034821,
+                "2018": 7391204817,
+                "2019": 6804752263,
+                "2020": 6802276192,
+                "2021": 7579842357,
+                "Name": "France",
+                "Content": "France is part of the European Union, which is one of the U.S.’s largest and most important trading partners.  While there is currently no dedicated free trade agreement between the U.S. and the EU, the U.S. remains the EU’s single largest trading partner."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.549047,
+                    46.698481
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            2.549047,
-            46.698481
-          ]
-        }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 6013012489,
-          "2017": 6475770488,
-          "2018": 6976547429,
-          "2019": 7050228241,
-          "2020": 6798582147,
-          "2021": 7390598801,
-          "Name": "Australia"
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 6013012489,
+                "2017": 6475770488,
+                "2018": 6976547429,
+                "2019": 7050228241,
+                "2020": 6798582147,
+                "2021": 7390598801,
+                "Name": "Australia",
+                "Content": "The United States and Australia have’a close and cooperative trade relationship, which is underpinned by the U.S.-Australia Free Trade Agreement. Australia is one of the top importers of U.S. machinery."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    134.050443,
+                    -23.992438
+                ]
+            }
         },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            134.050443,
-            -23.992438
-          ]
+        {
+            "type": "Feature",
+            "properties": {
+                "2016": 6947876859,
+                "2017": 6749099783,
+                "2018": 7273171034,
+                "2019": 7532701225,
+                "2020": 6801810893,
+                "2021": 6961258533,
+                "Name": "Brazil",
+                "Content": "The United States and Brazil have’enjoyed a strong economic relationship for many years. The U.S. is Brazil’s second largest trading partner."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -49.542449,
+                    -11.928923
+                ]
+            }
         }
-      },
-      {
-        "type": "Feature",
-        "properties": {
-          "2016": 6947876859,
-          "2017": 6749099783,
-          "2018": 7273171034,
-          "2019": 7532701225,
-          "2020": 6801810893,
-          "2021": 6961258533,
-          "Name": "Brazil"
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            -49.542449,
-            -11.928923
-          ]
-        }
-      }
     ]
-  }
+}

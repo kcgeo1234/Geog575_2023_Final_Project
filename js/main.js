@@ -17,8 +17,7 @@ function createMap(){
           "Organic Chemicals":"Organic_Chemicals_Export.geojson",
           "Chemicals":"Chemical_Export.geojson",
           "Halogenated Hydrocarbons":"Halogenated_Hydrocarbons_Export.geojson",
-          // "Metals":"Metal_export.geojson",
-          "Metals":"Metal_test.geojson",
+          "Metals":"Metal_export.geojson",
           "Textiles":"Textiles_Export.geojson"
         };
     //create the map
