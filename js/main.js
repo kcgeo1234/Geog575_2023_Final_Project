@@ -166,7 +166,7 @@ function calcStats(data){
   return minValue;
 };
 
-function createSidebarContent(properties, attribute){
+function createSidebarContent(properties, attribute, mapName){
   document.getElementsByClassName('close')[0].addEventListener("click",function(){
     map.setView([30, 0], 2);
     document.querySelector('.leaflet-right').style.display = 'block';
@@ -179,7 +179,7 @@ function createSidebarContent(properties, attribute){
   num = num.toLocaleString("en-US");
   h1.innerHTML = 'US Export Value';
   image.src = `img/Flags/${properties.Name}.png`
-  sidebarContent.innerHTML = `The value of the U.S. export to ${properties.Name} in year ${attribute} is ${num} USD`
+  sidebarContent.innerHTML = `The value of U.S. ${mapName} exports to ${properties.Name} in ${attribute} was $${num}.`
   sidebarContent.innerHTML += `<p> ${properties.Content}</p>`;
 };
 
@@ -235,7 +235,7 @@ function pointToLayer(feature, latlng, attributes, mapName){
     click: function(e){
       coord = e.latlng
       map.setView([coord.lat, coord.lng], 5);
-      createSidebarContent(e.target.feature.properties, attribute)
+      createSidebarContent(e.target.feature.properties, attribute, mapName)
       document.querySelector('.leaflet-right').style.display = 'none';
       sidebar.show();
     }
@@ -408,7 +408,7 @@ function updatePropSymbols(attribute, mapName){
 
           click: function(e){
             coord = e.latlng
-            createSidebarContent(e.target.feature.properties, attribute);
+            createSidebarContent(e.target.feature.properties, attribute, mapName);
             map.setView([coord.lat, coord.lng], 5);
             document.querySelector('.leaflet-right').style.display = 'none';
             sidebar.show();
